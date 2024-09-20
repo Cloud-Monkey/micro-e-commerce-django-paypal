@@ -12,7 +12,7 @@ class Customer(models.Model):
 	def __str__(self):
 		return self.name
 
-# product model
+# product model 
 class Product(models.Model):
 	name = models.CharField(max_length=100)
 	price = models.FloatField()
@@ -21,7 +21,7 @@ class Product(models.Model):
 	def __str__(self):
 		return self.name
 
-# order model
+# order model connected to the customer with a one to many relationship
 class Order(models.Model):
 	customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
 	date_ordered = models.DateTimeField(auto_now_add=True)
