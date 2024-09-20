@@ -133,6 +133,9 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# media url to point at the images folder
+MEDIA_URL = 'images/'
+
 # media storage location uplaoded from admin panel
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
