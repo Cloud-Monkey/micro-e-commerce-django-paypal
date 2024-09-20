@@ -14,6 +14,7 @@ class Customer(models.Model):
 
 # product model 
 class Product(models.Model):
+	category = models.CharField(max_length=100)
 	name = models.CharField(max_length=100)
 	price = models.FloatField()
 	color = models.CharField(max_length=20)
