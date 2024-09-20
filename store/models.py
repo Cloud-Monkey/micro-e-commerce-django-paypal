@@ -26,13 +26,13 @@ class Product(models.Model):
 		return self.name
 
 
-@property
-def imageURL(self):
-	try:
-		url = self.image.url
-	except:
-		url = ''
-	return url
+	@property
+	def imageURL(self):
+		try:
+			url = self.image.url
+		except:
+			url = ''
+		return url
 
 # order model connected to the customer with a one to many relationship
 class Order(models.Model):
