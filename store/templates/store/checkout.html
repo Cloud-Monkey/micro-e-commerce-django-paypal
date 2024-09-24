@@ -25,10 +25,10 @@
 							<input class="form-control" type="text" name="city" placeholder="City..">
 						</div>
 						<div class="form-field">
-							<input class="form-control" type="text" name="state" placeholder="County..">
+							<input class="form-control" type="text" name="county" placeholder="County..">
 						</div>
 						<div class="form-field">
-							<input class="form-control" type="text" name="zipcode" placeholder="Post code..">
+							<input class="form-control" type="text" name="postcode" placeholder="Post code..">
 						</div>
 						<!-- <div class="form-field">
 							<input class="form-control" type="text" name="country" placeholder="Country..">
@@ -118,8 +118,9 @@
 			if (shipping != 'False'){
 	    		shippingInfo.address = form.address.value
 		    	shippingInfo.city = form.city.value
+				console.log(form)
 		    	shippingInfo.county = form.county.value
-		    	shippingInfo.post_code = form.post_code.value
+		    	shippingInfo.postcode = form.postcode.value
 	    	}
 
 	    	if (user == 'AnonymousUser'){
