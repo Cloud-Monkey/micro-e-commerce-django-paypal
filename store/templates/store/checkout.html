@@ -28,7 +28,7 @@
 							<input class="form-control" type="text" name="county" placeholder="County..">
 						</div>
 						<div class="form-field">
-							<input class="form-control" type="text" name="postcode" placeholder="Post code..">
+							<input class="form-control" type="text" name="post_code" placeholder="Post code..">
 						</div>
 						<!-- <div class="form-field">
 							<input class="form-control" type="text" name="country" placeholder="Country..">
@@ -112,7 +112,7 @@
 				'address':null,
 				'city':null,
 				'county':null,
-				'postcode':null,
+				'post_code':null,
 			}
 
 			if (shipping != 'False'){
@@ -120,7 +120,7 @@
 		    	shippingInfo.city = form.city.value
 				console.log(form)
 		    	shippingInfo.county = form.county.value
-		    	shippingInfo.postcode = form.postcode.value
+		    	shippingInfo.post_code = form.post_code.value
 	    	}
 
 	    	if (user == 'AnonymousUser'){
@@ -132,6 +132,7 @@
 	    	console.log('User Info:', userFormData)
 
 	    	const url = "/process_order/"
+			console.log(csrftoken)
 	    	fetch(url, {
 	    		method:'POST',
 	    		headers:{
@@ -139,7 +140,6 @@
 	    			'X-CSRFToken':csrftoken,
 	    		}, 
 	    		body:JSON.stringify({'form':userFormData, 'shipping':shippingInfo}),
-	    		
 	    	})
 	    	.then((response) => response.json())
 	    	.then((data) => {

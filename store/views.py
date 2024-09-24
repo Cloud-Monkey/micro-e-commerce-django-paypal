@@ -98,7 +98,7 @@ def processOrder(request):
 			address=data['shipping']['address'],
 			city=data['shipping']['city'],
 			county=data['shipping']['county'],
-			postcode=data['shipping']['postcode'],
+			post_code=data['shipping']['post_code'],
 			)
 	else:
 		print('User is not logged in')
