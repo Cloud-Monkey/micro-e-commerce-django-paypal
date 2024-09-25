@@ -22,7 +22,7 @@
 		const user = '{{request.user}}'
 
 		function getToken(name) {
-		    const cookieValue = null;
+		    let cookieValue = null;
 		    if (document.cookie && document.cookie !== '') {
 		        const cookies = document.cookie.split(';');
 		        for (let i = 0; i < cookies.length; i++) {
@@ -57,7 +57,7 @@
 		    // Return null if not found
 		    return null;
 		}
-		const cart = JSON.parse(getCookie('cart'))
+		let cart = JSON.parse(getCookie('cart'))
 
 		if (cart == undefined){
 			cart = {}
