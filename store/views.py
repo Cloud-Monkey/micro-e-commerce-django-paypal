@@ -31,7 +31,7 @@ def cart(request):
 	else:
 		#Create empty cart for now for non-logged in user
 		try:
-			cart = JSON.loads(request.COOKIES['cart'])
+			cart = json.loads(request.COOKIES['cart'])
 			# cart = request.session.get('cart', {})
 			print('CART:', cart)
 		except:
