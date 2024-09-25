@@ -32,6 +32,7 @@ def cart(request):
 		#Create empty cart for now for non-logged in user
 		try:
 			cart = json.loads(request.COOKIES['cart'])
+			print('CART:', cart)
 		except:
 			cart = {}
 			print('CART:', cart)
@@ -113,4 +114,3 @@ def processOrder(request):
 		print('User is not logged in')
 
 	return JsonResponse('Payment submitted..', safe=False)
- 

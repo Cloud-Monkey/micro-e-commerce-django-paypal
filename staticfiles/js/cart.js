@@ -1,37 +1,32 @@
-const updateBtns = document.getElementsByClassName('update-cart')
+var updateBtns = document.getElementsByClassName('update-cart')
 
-// event listener for add to cart button
 for (i = 0; i < updateBtns.length; i++) {
-	updateBtns[i].addEventListener('click', function () {
-		const productId = this.dataset.product
-		const action = this.dataset.action
+	updateBtns[i].addEventListener('click', function(){
+		var productId = this.dataset.product
+		var action = this.dataset.action
 		console.log('productId:', productId, 'Action:', action)
-		// User is logged in or not
 		console.log('USER:', user)
-		if (user == 'AnonymousUser') {
-			console.log('User is not authenticated')
+
+		if (user == 'AnonymousUser'){
 			addCookieItem(productId, action)
-		} else {
-			console.log('User is authenticated, sending data...')
+		}else{
 			updateUserOrder(productId, action)
 		}
-
 	})
 }
 
-// gets called when user is logged in POST request stringifys productID and action as a JSON object
-function updateUserOrder(productId, action) {
+function updateUserOrder(productId, action){
 	console.log('User is authenticated, sending data...')
 
-	const url = '/update_item/'
-	// create token workaround from django documentation
+		var url = '/update_item/'
+
 		fetch(url, {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-			'X-CSRFToken': csrftoken,
+			method:'POST',
+			headers:{
+				'Content-Type':'application/json',
+				'X-CSRFToken':csrftoken,
 			}, 
-		body: JSON.stringify({ 'productId': productId, 'action': action })
+			body:JSON.stringify({'productId':productId, 'action':action})
 		})
 		.then((response) => {
 		   return response.json();
@@ -40,7 +35,7 @@ function updateUserOrder(productId, action) {
 		    location.reload()
 		});
 }
-// create cookie for cart when user is logged or not
+
 function addCookieItem(productId, action){
 	console.log('User is not authenticated')
 
