@@ -20,49 +20,49 @@ for (i = 0; i < updateBtns.length; i++) {
 }
 
 // gets called when user is logged in POST request stringifys productID and action as a JSON object
-function updateUserOrder(productId, action){
+function updateUserOrder(productId, action) {
 	console.log('User is authenticated, sending data...')
 
-		const url = '/update_item/'
-// create token workaround from django documentation
-		fetch(url, {
-			method:'POST',
-			headers:{
-				'Content-Type':'application/json',
-				'X-CSRFToken':csrftoken,
-			}, 
-			body:JSON.stringify({'productId':productId, 'action':action})
-		})
+	const url = '/update_item/'
+	// create token workaround from django documentation
+	fetch(url, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			'X-CSRFToken': csrftoken,
+		},
+		body: JSON.stringify({ 'productId': productId, 'action': action })
+	})
 		.then((response) => {
-		   return response.json();
+			return response.json();
 		})
 		.then((data) => {
-		    location.reload()
+			location.reload()
 		});
 }
 
-function addCookieItem(productId, action){
+function addCookieItem(productId, action) {
 	console.log('User is not authenticated')
 
-	if (action == 'add'){
-		if (cart[productId] == undefined){
-		cart[productId] = {'quantity':1}
+	if (action == 'add') {
+		if (cart[productId] == undefined) {
+			cart[productId] = { 'quantity': 1 }
 
-		}else{
+		} else {
 			cart[productId]['quantity'] += 1
 		}
 	}
 
-	if (action == 'remove'){
+	if (action == 'remove') {
 		cart[productId]['quantity'] -= 1
 
-		if (cart[productId]['quantity'] <= 0){
+		if (cart[productId]['quantity'] <= 0) {
 			console.log('Item should be deleted')
 			delete cart[productId];
 		}
 	}
 	console.log('CART:', cart)
 	document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
-	
+
 	location.reload()
 }
