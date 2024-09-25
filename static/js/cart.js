@@ -40,7 +40,7 @@ function updateUserOrder(productId, action) {
 			location.reload()
 		});
 }
-
+// create cookie for cart when user is logged or not
 function addCookieItem(productId, action) {
 	console.log('User is not authenticated')
 
