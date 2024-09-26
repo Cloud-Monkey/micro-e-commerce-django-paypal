@@ -1,6 +1,6 @@
-# everneed
+# Button mashers
 
-![everneed responsive screenshot](docs/readme_images/everneed_rep_view.png)
+![Button mashers responsive screenshot]()
 
 ## Introduction
 
@@ -8,7 +8,7 @@
 
 [existing ones](https://www.unep.org/resources/emissions-gap-report-2022#:~:text=The%20world%20is%20not%20on,cent%20to%20avoid%20global%20catastrophe.).
 
-View live site: [everneed](https://everneed-096aafe5d13c.herokuapp.com/)
+View live site: [Button mashers]()
 
 If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
 
@@ -20,13 +20,13 @@ If you wish to make a test purchase, you can use the following [Stripe Dummy Car
 
 Any payments made using a valid debit/credit card will not be processed and the card will not be charged. No orders made will be fulfilled.
 
-For full Admin access to Django Admin panel with relevant sign-in credentials: [Everneed Admin](https://everneed-096aafe5d13c.herokuapp.com/admin/)
+For full Admin access to Django Admin panel with relevant sign-in credentials: [Button mashers Admin]()
 
-For access to Admin Dashboard frontend view with relevant sign-in credentials: [Everneed Admin Dashboard](https://everneed-096aafe5d13c.herokuapp.com/products/admin_dashboard/)
+For access to Admin Dashboard frontend view with relevant sign-in credentials: [Button mashers Admin Dashboard]()
 
 ## Table of Contents
 
-- [everneed](#everneed)
+- [Button mashers](#Button mashers)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -112,8 +112,8 @@ A simple logo, created using *logo reference here <----------*
 
 ### Color Scheme
 
-![Everneed Color Scheme](docs/readme_images/en_final_colors.png)
-*Everneed Color Scheme*
+![Button mashers Color Scheme]()
+*Button mashers Color Scheme*
 
 Variables were used within the CSS file to call colours as they were needed:
 - --colours here
@@ -124,7 +124,7 @@ The above colours were chosen to reflect colours found ... where?
 *Button Mashers Main Button*
 
 ![Button mashers Color Scheme accessibility Check]()  
-*Everneed Color Accessibility Check*
+*Button mashers Color Accessibility Check*
 
 ![Button mashers Color Scheme Contrast Check]()  
 * Button mashers Color Contrast Check - Main*
@@ -145,7 +145,7 @@ In development, 'Karla' was identified by variable ```--title```, whilst 'Incons
 
 ## Strategy Plane
 
-The primary objective was to create an e-commerce store that satisfied the assessment criteria of the Code Institute's Project 5: E-Commerce Module. The store must provide the expected functions of a responsive e-commerce store using Stripe as a payment system, user/guest views for authentication and store features, some extra features of my choosing, wishlist and articles, and demonstration of some marketing/SEO skills. Orders on Everneed were to display the carbon footprint totals and carbon saved, (where data is available, see below), reflecting the pressing need for eco-consciousness in these modern times. The User, whether paying customer or just browsing, must receive the best in UX and feel that Everneed is relatable and trust-worthy. 
+The primary objective was to create an e-commerce store that satisfied the assessment criteria of the Code Institute's Project 5: E-Commerce Module. The store must provide the expected functions of a responsive e-commerce store using Stripe as a payment system, user/guest views for authentication and store features, some extra features of my choosing, wishlist and articles, and demonstration of some marketing/SEO skills. Orders on Button mashers were to display the carbon footprint totals and carbon saved, (where data is available, see below), reflecting the pressing need for eco-consciousness in these modern times. The User, whether paying customer or just browsing, must receive the best in UX and feel that Button mashers is relatable and trust-worthy. 
 
 The site's design and graphic assets were collected through various copyright-free image websites. Images were edited for the website to be cohesive. The hero-image on the home page and above, was created by myself in Figma. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project's CSS files. 
 
@@ -156,14 +156,14 @@ If a customer chooses to make a purchase then they are given consistent feedback
 
 - Site provides enjoyable experience for shoppers.
 - Customers are educated about carbon footprints/credits/sustainable products through the checkout process and through reading the site articles and FAQ's.
-- Customers feel informed that they are making a good choice shopping with Everneed.
+- Customers feel informed that they are making a good choice shopping with Button mashers.
 - UX remains similar across screen sizes.
 - CRUD functionalities work as intended with easy to use frontend forms.
 - Scalable site to allow for extra features in the future.
 
 ## Agile Methodologies
 
-Everneed followed Agile planning methodologies to its completion. [GitHub Projects](https://github.com/users/amylour/projects/6) provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Milestones and Sprints. Keeping focused on individual sections as I built Everneed reduced the number of bugs and human errors.
+Button mashers followed Agile planning methodologies to its completion. [GitHub Projects](https://github.com/users/amylour/projects/6) provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Milestones and Sprints. Keeping focused on individual sections as I built Button mashers reduced the number of bugs and human errors.
 
 ### MoSCoW Prioritization
 
@@ -192,14 +192,14 @@ My Sprints were broken down into appropriately sized chunks from the beginning a
 
 ## Marketing
 
-An [Everneed Facebook Page](https://www.facebook.com/profile.php?id=61552368530738) was created to demonstrate promotion of the Everneed store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. Everneed also offers a newsletter subscription service through MailChimp. The benefit of both of these services is that the customer is not forced to sign up to either and potentially worry that they will be spammed with an unnecessary amount of information. Everneed avoids this in order to keep its brand clean and uphold its eco-friendly efforts.
+An [Button mashers Facebook Page](https://www.facebook.com/profile.php?id=61552368530738) was created to demonstrate promotion of the Button mashers store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. Button mashers also offers a newsletter subscription service through MailChimp. The benefit of both of these services is that the customer is not forced to sign up to either and potentially worry that they will be spammed with an unnecessary amount of information. Button mashers avoids this in order to keep its brand clean and uphold its eco-friendly efforts.
 
-Within the head's meta tags of the base template are researched keywords and a description of Everneed's goal as a business. These keywords have been researched using[Wordtracker](https://www.wordtracker.com/) to ensure that both short-tail and long-tail keywords are included. Keywords such as 'carbon-neutral', 'zero waste' and 'practical products' aim to reach most of the market, with additional descriptive key phrases such as 'buy longlife products' and 'buy once products' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Vegan', 'Organic' and 'Bamboo' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
+Within the head's meta tags of the base template are researched keywords and a description of Button mashers's goal as a business. These keywords have been researched using[Wordtracker](https://www.wordtracker.com/) to ensure that both short-tail and long-tail keywords are included. Keywords such as 'carbon-neutral', 'zero waste' and 'practical products' aim to reach most of the market, with additional descriptive key phrases such as 'buy longlife products' and 'buy once products' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Vegan', 'Organic' and 'Bamboo' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
 
 In addition to this, sitemap.xml and robots.txt files are included to increase the site's visibility. These files are essential for SEO (Search Engine Optimisation). The sitemap.xml was generated using [XML Sitemap](https://www.xml-sitemaps.com/) and included in the root folder of the project. A robots.txt file was created in the root folder to instruct search engine crawlers on how to access and crawl the site's pages.
 
-![Everneed Facebook Business Page](docs/readme_images/everneed_facebook.png)
-*Everneed Facebook Business Page*
+![Button mashers Facebook Business Page]()
+*Button mashers Facebook Business Page*
 
 ## User Stories
 
@@ -217,11 +217,11 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 
 | User Story | Priority |
 |------------------|---------------------|
-| As a **customer** I can **create and manage an account with Everneed** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
+| As a **customer** I can **create and manage an account with Button mashers** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
 | As a **customer**, I can **edit my personal details on my account** so that I can **keep them up to date**. | **MUST HAVE** |
 | As a **site user**, I can **enter my login details** so that I can **login in to my account**. | **MUST HAVE** |
 | As a **site user**, I can **click on the visible links in the footer** so that I can **view the relevant information and destinations**. | **MUST HAVE** |
-| As a **site user**, I can **register my email and receive a validation link via email** so that I can **create an account with everneed to track my spending and purchases**. | **SHOULD HAVE** |
+| As a **site user**, I can **register my email and receive a validation link via email** so that I can **create an account with Button mashers to track my spending and purchases**. | **SHOULD HAVE** |
 | As a **customer**, I can **use the Contact Us form** so I can **send a message to the business/site admin**. | **SHOULD HAVE** |
 
 ### Epic - Products
@@ -239,7 +239,7 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 
 | User Story | Priority |
 |------------------|---------------------|
-| As a **customer** I can **create and manage an account with everneed** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
+| As a **customer** I can **create and manage an account with Button mashers** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
 | As a **customer**, I can **click on 'Add to Bag' in my product view**so that I can **add the product to my bag**. | **MUST HAVE** |
 | As a **customer**, I can **increase/decrease/remove quantities of a product in my bag** so that I can **have control over what I wish to purchase**. | **MUST HAVE** |
 | As a **customer**, I can **view my bag total from any page** so that I can **keep track of my potential spending**. | **MUST HAVE** |
@@ -264,7 +264,7 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 
 ## Scope Plane
 
-To focus on the learning of the Stripe API and webhook handlers that would ultimately drive the inner workings of the project, I kept my Everneed scope lower than my previous project, FreeFido. A working e-commerce store was essential so I initially planned to keep to the MVP to ensure that I would complete the project successfully. Especially with the project being my final one for this Diploma, a rigorous year of learning left me ecstatic with my progress but cautious not to fall at the final hurdle from fatigue. However, through the planning stages I realised that I wanted to push further with the theme of an eco store and introduce carbon footprint as a currency that we may see in the future in the form of carbon credits.
+To focus on the learning of the Stripe API and webhook handlers that would ultimately drive the inner workings of the project, I kept my Button mashers scope lower than my previous project, FreeFido. A working e-commerce store was essential so I initially planned to keep to the MVP to ensure that I would complete the project successfully. Especially with the project being my final one for this Diploma, a rigorous year of learning left me ecstatic with my progress but cautious not to fall at the final hurdle from fatigue. However, through the planning stages I realised that I wanted to push further with the theme of an eco store and introduce carbon footprint as a currency that we may see in the future in the form of carbon credits.
 
 Adding an Articles feature posted solely by the Admin of the website felt important to give more information to the customers on climate-change and manufacturing processes and their environmental impacts. An additional Wishlist feature would complement the site as some of the items have a higher price point due to their robust and eco-friendly manufacturing processes and longevity and the customer may like to purchase them at a later date.
 
@@ -281,7 +281,7 @@ Essential features were:
     
 ## Structural Plane
 
-Everneed is built using Bootstrap, with Code Institute's Boutique Ado e-commerce project as its foundation. However, I picked apart the structure and styling to fit my own vision and changed quite a bit of the code. In particular I simplified the navbar and made the delivery banner a dropdown source of information, as is common with many modern e-commerce applications. Icons were sourced from Fontawesome and Flaticon through the wireframing process in Figma. The typography was chosen to give a clean, strong reading experience for the user. The Everneed icon was used as the Favicon. This is also repeated through the newsletter email.
+Button mashers is built using Bootstrap, with Code Institute's Boutique Ado e-commerce project as its foundation. However, I picked apart the structure and styling to fit my own vision and changed quite a bit of the code. In particular I simplified the navbar and made the delivery banner a dropdown source of information, as is common with many modern e-commerce applications. Icons were sourced from Fontawesome and Flaticon through the wireframing process in Figma. The typography was chosen to give a clean, strong reading experience for the user. The Button mashers icon was used as the Favicon. This is also repeated through the newsletter email.
 
 A dashed forest green 2px border is used for form fields throughout the project to replace browsers default blue highlight. Form validation has been left with it's original styling as no change was needed. Bootstrap allowed for easy transition between screen sizes as many ecommerce purchases are made using our mobiles, so this was a priority focus. Bootstrap components such as forms, an accordion section and a product carousel raised the spec of the project, to give it a professional finish.
 
@@ -289,7 +289,7 @@ A dashed forest green 2px border is used for form fields throughout the project 
 
 ### Wireframes
 
-[Figma](https://www.figma.com) was used to create basic wireframes for Everneed. I had a vision of what the site would look like from the beginning so the planning process went smoothly. Figma allows easy creation of wireframes to the appropriate frame sizes for different screens. Addition of icons and extra design features is easy with their Plugins component which can connect to Flaticon for example.
+[Figma](https://www.figma.com) was used to create basic wireframes for Button mashers. I had a vision of what the site would look like from the beginning so the planning process went smoothly. Figma allows easy creation of wireframes to the appropriate frame sizes for different screens. Addition of icons and extra design features is easy with their Plugins component which can connect to Flaticon for example.
 
 <details open>
     <summary>Desktop/Tablet Home Page Wireframe</summary>  
@@ -348,20 +348,20 @@ A dashed forest green 2px border is used for form fields throughout the project 
 
 ### Database Schema
 
-![Everneed Eco Eco-Ecommerce ERC](docs/readme_images/everneed_erd.png)  
-*Database Schema (ERD) for Everneed displaying relationships between feature components saved within the database*
+![Button mashers Eco Eco-Ecommerce ERC]()  
+*Database Schema (ERD) for Button mashers displaying relationships between feature components saved within the database*
 
-[Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for Everneed. To satisfy the assessment criteria, multiple models were created to personalise the Everneed project. These include:
+[Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for Button mashers. To satisfy the assessment criteria, multiple models were created to personalise the Button mashers project. These include:
 - **Articles**: Articles may be added by Admin with image and text fields within the Add/Edit Article forms.
 - **Order**: Carbon Footprint total and Carbon Saved Total have been added to the Boutique Ado Order model to handle the carbon total logic. This logic duplicates the product adding/updating/quantity logic within the bag contexts to allow for the carbon footprint to be calculated for products that had some form of data available to me to calculate approximate values.
 - **Product**: Carbon Footprint and Carbon Saved have been added to the Boutique Ado Product model to handle the carbon total logic. The Admin can enter these values into the Product Management forms to be made available for the bag/checkout logic to process them.
 - **Wishlist**: The Wishlist model takes simple values of the connected user and the product id to display the items in a list for the individual user.
 
-Future Feature models are visible in the ERD for Reactions, Reviews and Discount Codes. These will be incorporated into the next version of Everneed. At the moment they are beyond the MVP.
+Future Feature models are visible in the ERD for Reactions, Reviews and Discount Codes. These will be incorporated into the next version of Button mashers. At the moment they are beyond the MVP.
 
 ### Defensive Design
 
-Everneed was developed to ensure a reliable user experience. It's intention was to cause no frustrations for the users and to ensure they return to make further purchases.
+Button mashers was developed to ensure a reliable user experience. It's intention was to cause no frustrations for the users and to ensure they return to make further purchases.
 
 - Django AllAuth for user registration/log in/log out
 - Input validation and error messages provide feedback to the user to guide them towards the desired outcome. 
@@ -411,7 +411,7 @@ Customers have full CRUD functionality with their prospective purchases. They ma
 
 **All Auth - All Users who wish to create an account**
 
-Django AllAuth provides a comprehensive, customisable authentication system that keeps user data safe. If a customer wishes to register an account they may enter their username and email and password x 2 to ensure precision. Upon submitting the form the user will receive an email to validate their email and then sign in to Everneed. Similar to all form fields throughout the site, I have applied my own styling to keep in line with Everneed's design. The log in page is similar to the register page with the log out page presenting the user with two buttons to continue the log out process or to return home.
+Django AllAuth provides a comprehensive, customisable authentication system that keeps user data safe. If a customer wishes to register an account they may enter their username and email and password x 2 to ensure precision. Upon submitting the form the user will receive an email to validate their email and then sign in to Button mashers. Similar to all form fields throughout the site, I have applied my own styling to keep in line with Button mashers's design. The log in page is similar to the register page with the log out page presenting the user with two buttons to continue the log out process or to return home.
 
 Feedback is continually released to the user through toast messages to confirm successful registration, log in and log out.
 
@@ -463,7 +463,7 @@ When developing this project it was important to me to have a separate Admin are
 - [Figma](https://www.figma.com) for project design planning and wireframe creation.
 - [Adobe Color](https://color.adobe.com) for colour theme creation and accessibility checkers.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
-- [Heroku](https://www.heroku.com) was used to host the 'everneed' application.
+- [Heroku](https://www.heroku.com) was used to host the 'Button mashers' application.
 - [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
 - [Procreate](https://procreate.com/) for image creation and editing.
 
@@ -483,7 +483,7 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 - [gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/) apure-Python WSGI server for UNIX.
 - [oauthlib](https://pypi.org/project/oauthlib/) OAuth request-signing logic.
 - [psycopg2](https://pypi.org/project/psycopg2/) s PostgreSQL database adapter for Python.
-- [Stripe](https://stripe.com/en-ie) for processing Everneed's payment system.
+- [Stripe](https://stripe.com/en-ie) for processing Button mashers's payment system.
 
 ## Tools & Programs
 - [ImageCompressor](https://imagecompressor.com/) for compressing PNG/WEbp files
@@ -493,7 +493,7 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 - [Tiny Png](https://tinypng.com/) for file size reduction.
 - [Lucidchart](https://www.lucidchart.com/pages) for ERD (entity relationship diagram) creation.
 - [Favicon](https://favicon.io/) for converting an icon into a favicon.
-- [amiresponsive](https://ui.dev/amiresponsive) for screenshot of Everneed on different screen sizes.
+- [amiresponsive](https://ui.dev/amiresponsive) for screenshot of Button mashers on different screen sizes.
 - [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and Django documentation into more understandable chunks.
 - [Mailchimp](https://mailchimp.com/) is used for marketing with their newsletter subscription service.
 
@@ -521,7 +521,7 @@ To begin this project from scratch, you must first create a new GitHub repositor
 - ```pip3 install dj_database_url psycopg2``` 
   
 1. Once you have installed any relevant dependencies or libraries, such as the ones listed above, it is important to create a **requirements.txt** file and add all installed libraries to it with the ```pip3 freeze --local > requirements.txt``` command in the terminal.  
-2. Create a new Django project in the terminal ```django-admin startproject everneed .```
+2. Create a new Django project in the terminal ```django-admin startproject Button mashers .```
 3. Create a new app eg. ```python3 mangage.py startapp home```
 5. Add this to list of **INSTALLED_APPS** in **settings.py** - 'home',
 6. Create a superuser for the project to allow Admin access and enter credentials: ```python3 manage.py createsuperuser```
@@ -560,7 +560,7 @@ os.path.join(BASE_DIR, 'templates', 'allauth')
 
 - Create the media, static and templates directories in the top level of the project file in the IDE workspace.
 
-11. A **Procfile** must be created within the project repo for Heroku deployment with the following placed within it: ```web: gunicorn everneed.wsgi```
+11. A **Procfile** must be created within the project repo for Heroku deployment with the following placed within it: ```web: gunicorn ecommerce.wsgi```
 12. Make the necessary migrations again.
 
 ### Elephant SQL
@@ -604,16 +604,16 @@ To start the deployment process , please follow the below steps:
 1. Setup a Gmail Account that will be used to hold and store the emails for your project.
 2. Logged in, navigate to **Settings** -> **Other Google Account Settings** -> **Accounts** -> **Import** -> **Other Account Settings**
 3. Activate 2-Step Verification
-4. Once verified access **App Passwords** -> **Other** -> enter a name for the password, eg Everneed.
+4. Once verified access **App Passwords** -> **Other** -> enter a name for the password, eg Button mashers.
 5. Click **Create** -> copy the 16 digit password that is generated.
 6. In your `settings.py` add the following Email Settings:
    ![django email settings](docs/readme_images/email_settings.png)  
-   *Django Email Settings for Everneed Email setup*  
+   *Django Email Settings for Button mashers Email setup*  
 7. Add EMAIL_HOST_PASS, EMAIL_HOST_USER variable, password and email address to your Heroku Config Vars -->
     
 ## AWS Config
 
-[AWS](https://aws.amazon.com) is used to store the media and static files online for Everneed. Please follow the below steps to set it up for yourself:
+[AWS](https://aws.amazon.com) is used to store the media and static files online for Button mashers. Please follow the below steps to set it up for yourself:
 
 1. Setup AWS Account and Login
 2. Create a new S3 Bucket -> name it to match your Heroku App name -> Choose the region closest to you.
@@ -694,10 +694,10 @@ To start the deployment process , please follow the below steps:
 			]
 		}
 	```
-7. Click **Review Policy** -> name eg. 'policy-everneed' -> enter a description -> **Create Policy**
+7. Click **Review Policy** -> name eg. 'policy-Button mashers' -> enter a description -> **Create Policy**
 8. Search for your new policy and click it to **Attach Policy**
-9. **User Groups** -> **Add User** -> name eg. 'user-everneed'
-10. For **Select AWS Access Type** -> select **Programmatic Access** -> Add group to 'user-everneed' -> **Review User** -> **Create User**.
+9. **User Groups** -> **Add User** -> name eg. 'user-Button mashers'
+10. For **Select AWS Access Type** -> select **Programmatic Access** -> Add group to 'user-Button mashers' -> **Review User** -> **Create User**.
 11. Find **Download.csv** button to download immediately and save a copy.
     - This contains the user's **Access key ID** and **Secret access key**.
 	- `AWS_ACCESS_KEY_ID` = **Access key ID**
@@ -728,7 +728,7 @@ A local clone of this repository can be made on GitHub. Please follow the below 
 A copy of the original repository can be made through GitHub. Please follow the below steps to fork this repository:  
 
 1. Navigate to GitHub and log in.  
-2. Once logged in, navigate to this repository using this link [everneed Repository](https://github.com/amylour/everneed).
+2. Once logged in, navigate to this repository using this link [Button mashers Repository](https://github.com/amylour/Button mashers).
 3. Above the repository file section and to the top, right of the page is the '**Fork**' button, click on this to make a fork of this repository.
 4. You should now have access to a forked copy of this repository in your Github account.
 5. Follow the above Django Project Steps if you wish to work on the project.
@@ -751,5 +751,5 @@ Image credits are as follows:
 ## Acknowledgements
 
 - A huge thanks to my family for their continued support during this project and Diploma and the many, many cups of coffee sent my way. 
-- Much gratitude is extended to my mentor Rahul Lakhanpal for his expert guidance and advice during this Diploma, which gave me the confidence to make the most out of every project.
+- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coach John Rearden and my personal facilitator Amy ???  for their expert guidance and advice during this Bootcamp, which gave me the confidence to make the most out of every project.
 - Thank you to my fellow students and Code Institute alumni for their guidance and support.
