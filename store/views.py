@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.http import HttpResponse
 import json
 import datetime
 from .models import * 
@@ -31,10 +32,14 @@ def cart(request):
 	else:
 		#Create empty cart for now for non-logged in user
 		try:
-			cart = json.loads(request.COOKIES['cart'])
+			# cart = json.loads(request.COOKIES['cart'])
+			# print('(try block) CART:', cart)
+			cart_cookie = request.COOKIES.get('cart', '{}')
+			cart = json.loads(cart_cookie)
+			print('(try block) CART:', cart)
 		except:
 			cart = {}
-			print('CART:', cart)
+			print('(except block) CART:', cart)
 
 		items = []
 		order = {'get_cart_total':0, 'get_cart_items':0, 'shipping':False}
