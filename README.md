@@ -4,19 +4,7 @@
 
 ## Introduction
 
-[PCFs](https://tinyurl.com/2htnyr9w). 
-
-[existing ones](https://www.unep.org/resources/emissions-gap-report-2022#:~:text=The%20world%20is%20not%20on,cent%20to%20avoid%20global%20catastrophe.).
-
 View live site: [Button mashers]()
-
-If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
-
-- Success Card Number: 4242424242424242
-- 3D Secure Auth Number: 4000 0027 6000 3184
-- Exp Date: Any date in the future using the format MM/YY
-- CVN: any 3 digit number
-- Postcode: any 5 numerals  
 
 Any payments made using a valid debit/credit card will not be processed and the card will not be charged. No orders made will be fulfilled.
 
