@@ -22,7 +22,7 @@ def store(request):
 	return render(request, 'store/store.html', context)
 
 def cart(request):
-
+	print("All cookies:", request.COOKIES)
 	if request.user.is_authenticated:
 		customer = request.user.customer
 		order, created = Order.objects.get_or_create(customer=customer, complete=False)
