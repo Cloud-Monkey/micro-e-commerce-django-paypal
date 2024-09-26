@@ -22,7 +22,7 @@ def store(request):
 	return render(request, 'store/store.html', context)
 
 def cart(request):
-    
+
 	if request.user.is_authenticated:
 		customer = request.user.customer
 		order, created = Order.objects.get_or_create(customer=customer, complete=False)
@@ -32,8 +32,6 @@ def cart(request):
 		#Create empty cart for now for non-logged in user
 		try:
 			cart = json.loads(request.COOKIES['cart'])
-			# cart = request.session.get('cart', {})
-			print('CART:', cart)
 		except:
 			cart = {}
 			print('CART:', cart)
@@ -43,7 +41,29 @@ def cart(request):
 		cartItems = order['get_cart_items']
 
 		for i in cart:
-			cartItems += cart[i]['quantity']
+			#We use try block to prevent items in cart that may have been removed from causing error
+			try:
+				cartItems += cart[i]['quantity']
+
+				product = Product.objects.get(id=i)
+				total = (product.price * cart[i]['quantity'])
+
+				order['get_cart_total'] += total
+				order['get_cart_items'] += cart[i]['quantity']
+
+				item = {
+					'id':product.id,
+					'product':{'id':product.id,'name':product.name, 'price':product.price, 
+					'imageURL':product.imageURL}, 'quantity':cart[i]['quantity'],
+					'digital':product.digital,'get_total':total,
+					}
+				items.append(item)
+
+				if product.digital == False:
+					order['shipping'] = True
+			except:
+				pass
+
 
 	context = {'items':items, 'order':order, 'cartItems':cartItems}
 	return render(request, 'store/cart.html', context)
@@ -115,3 +135,14 @@ def processOrder(request):
 		print('User is not logged in')
 
 	return JsonResponse('Payment submitted..', safe=False)
+
+
+# if order.shipping == True:
+# 			ShippingAddress.objects.create(
+# 			customer=customer,
+# 			order=order,
+# 			address=data['shipping']['address'],
+# 			city=data['shipping']['city'],
+# 			county=data['shipping']['county'],
+# 			post_code=data['shipping']['post_code'],
+# 			)
