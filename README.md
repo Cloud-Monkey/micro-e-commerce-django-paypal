@@ -739,5 +739,5 @@ Image credits are as follows:
 ## Acknowledgements
 
 - A huge thanks to my family for their continued support during this project and Diploma and the many, many cups of coffee sent my way. 
-- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coach John Rearden and my personal facilitator Amy ???  for their expert guidance and advice during this Bootcamp, which gave me the confidence to make the most out of every project.
+- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coach John Rearden and my personal facilitator Amy Richardson for their expert guidance and advice during this Bootcamp, which gave me the confidence to make the most out of every project.
 - Thank you to my fellow students and Code Institute alumni for their guidance and support.
