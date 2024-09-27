@@ -8,10 +8,24 @@ from .models import *
 def store(request):
 
 	if request.user.is_authenticated:
-		customer = request.user.customer
-		order, created = Order.objects.get_or_create(customer=customer, complete=False)
-		items = order.orderitem_set.all()
-		cartItems = order.get_cart_items
+		print("----------------")
+		print(request.user.username) # this goes to user AND name (same value for both) in CUSTOMER table
+		print(request.user.email) # this goes to email in CUSTOMER table
+		print("----------------")
+		if request.user.customer:
+			customer = request.user.customer
+			order, created = Order.objects.get_or_create(customer=customer, complete=False)
+			items = order.orderitem_set.all()
+			cartItems = order.get_cart_items
+		else:
+			# send post to make customer
+			# HELLO IM A POST TO CUSTOMER TABLE
+
+   			# then do the fields once resolved
+			customer = request.user.customer
+			order, created = Order.objects.get_or_create(customer=customer, complete=False)
+			items = order.orderitem_set.all()
+			cartItems = order.get_cart_items
 	else:
 		#Create empty cart for now for non-logged in user
 		items = []
@@ -140,14 +154,3 @@ def processOrder(request):
 		print('User is not logged in')
 
 	return JsonResponse('Payment submitted..', safe=False)
-
-
-# if order.shipping == True:
-# 			ShippingAddress.objects.create(
-# 			customer=customer,
-# 			order=order,
-# 			address=data['shipping']['address'],
-# 			city=data['shipping']['city'],
-# 			county=data['shipping']['county'],
-# 			post_code=data['shipping']['post_code'],
-# 			)
