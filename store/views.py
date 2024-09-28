@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from django.http import HttpResponse
 import json
@@ -145,3 +145,14 @@ def processOrder(request):
 		print('User is not logged in')
 
 	return JsonResponse('Payment submitted..', safe=False)
+
+def product_detail(request, product_id):
+
+    queryset = Product.objects.filter(id=product_id)
+    expanded_product = get_object_or_404(queryset, id=product_id)
+
+    return render(
+        request,
+        "store/product_detail.html",
+        {"product": expanded_product},
+    )
