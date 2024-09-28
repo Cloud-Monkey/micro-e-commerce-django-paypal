@@ -2,16 +2,20 @@
 {% load static %}
 
 {% block content %}
-<div class="col-lg-4">
-    <img class="thumbnail" src="{{product.imageURL}}">
-    <div class="box-element product">
-        <h6><strong>{{product.name}}</strong></h6>
-        <hr>
-
-        <button data-product="{{product.id}}" data-action="add"
-            class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button> 
-        <h4 style="display: inline-block; float: right"><strong>£{{product.price}}</strong></h4>
-
+<div class="col-12">
+    <div class="row justify-content-center">
+        <div class="box-element product col-8">
+            <img class="product-detail-img" src="{{product.imageURL}}">
+            <hr>
+            <h6><strong>{{product.name}}</strong></h6>
+            <p>{{ product.description }}</p>
+            <p><strong>Colour: </strong>{{ product.color }}</p>
+            <p><strong>Category: </strong>{{ product.category }}</p>
+            <hr>
+            <button data-product="{{product.id}}" data-action="add"
+                class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+            <h4 style="display: inline-block; float: right"><strong>£{{product.price}}</strong></h4>
+        </div>
     </div>
 </div>
 {% endblock %}
