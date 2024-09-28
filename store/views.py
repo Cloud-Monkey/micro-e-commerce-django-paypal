@@ -39,8 +39,6 @@ def cart(request):
 	else:
 		#Create empty cart for now for non-logged in user
 		try:
-			# cart = json.loads(request.COOKIES['cart'])
-			# print('(try block) CART:', cart)
 			cart_cookie = request.COOKIES.get('cart', '{}')
 			cart = json.loads(cart_cookie)
 			print('(try block) CART:', cart)
