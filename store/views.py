@@ -8,20 +8,13 @@ from .models import *
 def store(request):
 
 	if request.user.is_authenticated:
-		print("----------------")
-		print(request.user.username) # this goes to user AND name (same value for both) in CUSTOMER table
-		print(request.user.email) # this goes to email in CUSTOMER table
-		print("----------------")
+
 		if request.user.customer:
 			customer = request.user.customer
 			order, created = Order.objects.get_or_create(customer=customer, complete=False)
 			items = order.orderitem_set.all()
 			cartItems = order.get_cart_items
 		else:
-			# send post to make customer
-			# HELLO IM A POST TO CUSTOMER TABLE
-
-   			# then do the fields once resolved
 			customer = request.user.customer
 			order, created = Order.objects.get_or_create(customer=customer, complete=False)
 			items = order.orderitem_set.all()
