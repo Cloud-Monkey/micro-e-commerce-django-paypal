@@ -69,6 +69,9 @@
                 </p>
                 <p class="review-created">{{ review.created_at }}</p>
                 <p>{{ review.body }}</p>
+                {% if user.is_authenticated and review.user == user %}
+                <button class="btn btn-delete" review_id="{{ review.id }}">Delete</button>
+                {% endif %}
             </div>
             {% empty %}
             <p>There are currently no reviews for this product.</p>
@@ -95,5 +98,31 @@
             {% endif %}
         </div>
     </div>
+
+    <!-- Delete confirmation modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Delete review?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete your review?
+                    This action cannot be undone.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a id="deleteConfirm" href="#" class="btn
+          btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/reviews.js' %}"></script>
+
+{% endblock %}
