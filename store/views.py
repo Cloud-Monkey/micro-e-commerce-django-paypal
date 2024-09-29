@@ -1,10 +1,21 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.http import JsonResponse
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+from django import forms
+from django.contrib import messages
+from django.views import generic
 import json
 import datetime
 from .models import * 
 
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ('rating', 'body')
+        
+        
 def store(request):
 
 	if request.user.is_authenticated:
@@ -152,6 +163,27 @@ def product_detail(request, product_id):
 
 	reviews = Review.objects.filter(product=product_id).order_by("-created_at")
 	review_count = reviews.count()
+	has_existing_review = False
+
+	for review in reviews:
+		if review.user == request.user:
+			has_existing_review = True
+
+	if request.method == "POST" and has_existing_review is not True:
+		review_form = ReviewForm(data=request.POST)
+	
+		if review_form.is_valid():
+			review = review_form.save(commit=False)
+			review.user = request.user
+			review.product = expanded_product
+			review.save()
+			messages.add_message(
+        		request, messages.SUCCESS,
+        		"Review submitted."
+    		)
+			return HttpResponseRedirect(reverse('product_detail', args=[product_id]))
+    
+	review_form = ReviewForm()
 
 	return render(
         request,
@@ -161,6 +193,8 @@ def product_detail(request, product_id):
             'cartItems':cartItems,
             "reviews": reviews,
             "review_count": review_count,
+            "review_form": review_form,
+            "has_existing_review": has_existing_review,
         },
         
     )
