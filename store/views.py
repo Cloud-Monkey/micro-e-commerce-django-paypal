@@ -149,9 +149,18 @@ def product_detail(request, product_id):
 
 	queryset = Product.objects.filter(id=product_id)
 	expanded_product = get_object_or_404(queryset, id=product_id)
-   
+
+	reviews = Review.objects.filter(product=product_id).order_by("-created_at")
+	review_count = reviews.count()
+
 	return render(
         request,
         "store/product_detail.html",
-        {"product": expanded_product, 'cartItems':cartItems},
+        {
+            "product": expanded_product,
+            'cartItems':cartItems,
+            "reviews": reviews,
+            "review_count": review_count,
+        },
+        
     )
