@@ -11,8 +11,14 @@
             <p><strong>Colour: </strong>{{ product.color }}</p>
             <p><strong>Category: </strong>{{ product.category }}</p>
             <hr>
+
+            {% if user.is_authenticated %}
             <button data-product="{{product.id}}" data-action="add"
                 class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+            {% else %}
+            <a href="{% url 'account_login' %}"
+                class="btn btn-outline-secondary add-btn update-cart">Add to Cart</a>
+            {% endif %}
             <h4 style="display: inline-block; float: right"><strong>£{{product.price}}</strong></h4>
         </div>
     </div>
