@@ -142,13 +142,20 @@ def processOrder(request):
 
 def product_detail(request, product_id):
 
-    queryset = Product.objects.filter(id=product_id)
-    expanded_product = get_object_or_404(queryset, id=product_id)
-    customer = request.user.customer
-    order, created = Order.objects.get_or_create(customer=customer, complete=False)
-    cartItems = order.get_cart_items
+	if request.user.is_authenticated:
+
+		customer = request.user.customer
+		order, created = Order.objects.get_or_create(customer=customer, complete=False)
+		cartItems = order.get_cart_items
+	else:
+		#Create empty cart for now for non-logged in user
+		order = {'get_cart_total':0, 'get_cart_items':0, 'shipping':False}
+		cartItems = order['get_cart_items']
+
+	queryset = Product.objects.filter(id=product_id)
+	expanded_product = get_object_or_404(queryset, id=product_id)
    
-    return render(
+	return render(
         request,
         "store/product_detail.html",
         {"product": expanded_product, 'cartItems':cartItems},
