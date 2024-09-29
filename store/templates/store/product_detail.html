@@ -69,6 +69,8 @@
                 <p class="review-created">{{ review.created_at }}</p>
                 <p>{{ review.body }}</p>
             </div>
+            {% empty %}
+            <p>There are currently no reviews for this product.</p>
             {% endfor %}
         </div>
     </div>
