@@ -9,16 +9,10 @@ def store(request):
 
 	if request.user.is_authenticated:
 
-		if request.user.customer:
-			customer = request.user.customer
-			order, created = Order.objects.get_or_create(customer=customer, complete=False)
-			items = order.orderitem_set.all()
-			cartItems = order.get_cart_items
-		else:
-			customer = request.user.customer
-			order, created = Order.objects.get_or_create(customer=customer, complete=False)
-			items = order.orderitem_set.all()
-			cartItems = order.get_cart_items
+		customer = request.user.customer
+		order, created = Order.objects.get_or_create(customer=customer, complete=False)
+		items = order.orderitem_set.all()
+		cartItems = order.get_cart_items
 	else:
 		#Create empty cart for now for non-logged in user
 		items = []
@@ -150,9 +144,12 @@ def product_detail(request, product_id):
 
     queryset = Product.objects.filter(id=product_id)
     expanded_product = get_object_or_404(queryset, id=product_id)
-
+    customer = request.user.customer
+    order, created = Order.objects.get_or_create(customer=customer, complete=False)
+    cartItems = order.get_cart_items
+   
     return render(
         request,
         "store/product_detail.html",
-        {"product": expanded_product},
+        {"product": expanded_product, 'cartItems':cartItems},
     )
