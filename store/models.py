@@ -47,6 +47,24 @@ class Product(models.Model):
 		except:
 			url = ''
 		return url
+  
+
+# review model child to product model related to the user/customer model
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    rating = models.IntegerField(default=0)
+    body = models.CharField(max_length=500)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = ('product', 'user')
+        ordering = ["created_at"]
+
+    def __str__(self):
+        return f"Review {self.body} by {self.user}"
+
 
 # order model connected to the customer with a one to many relationship
 class Order(models.Model):
@@ -103,3 +121,4 @@ class ShippingAddress(models.Model):
 
 	def __str__(self):
 		return self.address
+
