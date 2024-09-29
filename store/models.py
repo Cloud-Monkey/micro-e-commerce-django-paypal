@@ -63,7 +63,7 @@ class Review(models.Model):
         ordering = ["created_at"]
 
     def __str__(self):
-        return f"Review {self.body} by {self.user}"
+        return f"Review {self.product} by {self.user}"
 
 
 # order model connected to the customer with a one to many relationship
