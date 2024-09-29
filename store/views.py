@@ -24,7 +24,6 @@ def store(request):
 	return render(request, 'store/store.html', context)
 
 def cart(request):
-	print("All cookies:", request.COOKIES)
 	if request.user.is_authenticated:
 		customer = request.user.customer
 		order, created = Order.objects.get_or_create(customer=customer, complete=False)
@@ -35,10 +34,8 @@ def cart(request):
 		try:
 			cart_cookie = request.COOKIES.get('cart', '{}')
 			cart = json.loads(cart_cookie)
-			print('(try block) CART:', cart)
 		except:
 			cart = {}
-			print('(except block) CART:', cart)
 
 		items = []
 		order = {'get_cart_total':0, 'get_cart_items':0, 'shipping':False}
@@ -91,8 +88,6 @@ def updateItem(request):
 	data = json.loads(request.body)
 	productId = data['productId']
 	action = data['action']
-	print('Action:', action)
-	print('Product:', productId)
 
 	customer = request.user.customer
 	product = Product.objects.get(id=productId)

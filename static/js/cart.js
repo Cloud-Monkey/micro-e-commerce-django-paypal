@@ -5,14 +5,11 @@ for (i = 0; i < updateBtns.length; i++) {
 	updateBtns[i].addEventListener('click', function () {
 		const productId = this.dataset.product
 		const action = this.dataset.action
-		console.log('productId:', productId, 'Action:', action)
+
 		// User is logged in or not
-		console.log('USER:', user)
 		if (user == 'AnonymousUser') {
-			console.log('User is not authenticated')
 			addCookieItem(productId, action)
 		} else {
-			console.log('User is authenticated, sending data...')
 			updateUserOrder(productId, action)
 		}
 
@@ -40,6 +37,7 @@ function updateUserOrder(productId, action) {
 		    location.reload()
 		});
 }
+
 // create cookie for cart when user is logged or not
 function addCookieItem(productId, action){
     console.log('User is not authenticated');
@@ -60,8 +58,6 @@ function addCookieItem(productId, action){
             delete cart[productId];
         }
     }
-
-    console.log('CART:', cart)
 
     // Set the cookie with SameSite=Lax attribute
     document.cookie = 'cart=' + JSON.stringify(cart) + 
