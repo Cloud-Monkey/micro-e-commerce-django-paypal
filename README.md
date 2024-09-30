@@ -103,7 +103,7 @@ This distinctive style not only captures the essence of classic arcade games but
 
 ![Button mashers logo](/readme-images/logo-readme.png)
 
-For the Button Mashers website, product images showcase arcade components against a neutral background on box elements, allowing customers to clearly see details of buttons, joysticks, and other peripherals. The included buttons stand out allowing the user to clearly see options to add the product to their cart or view the product in detail.
+Product images showcase arcade components against a neutral background on box elements, allowing customers to clearly see details of buttons, joysticks, and other peripherals. The included buttons stand out allowing the user to clearly see options to add the product to their cart or view the product in detail.
 
 ![Product box item display](/readme-images/product-box-item.png)
 
@@ -113,13 +113,21 @@ The site's header dynamically updates to display the user's login status and the
 
 ### Color Scheme
 
-![Button mashers Color Scheme]()
-*Button mashers Color Scheme*
+Initial colour schemes were generated using http://colormind.io/image/
+
+![Button mashers Color Scheme](/readme-images/colour-palette-img2.png)
 
 Variables were used within the CSS file to call colours as they were needed:
-- --colours here
 
-The above colours were chosen to reflect colours found ... where?
+- Fire-Brick: #9D3A3B;
+- Space: #1F212A;
+- Teal: #4D848A;
+- Off-White: #F4F4F4;
+- Gold: #C9A539;
+
+The above colours were chosen to be vibrant and bold but also cohesive enough to work in unison and to aid in a clean simple and accessable design layout.
+
+Compromises were made with Bootstrap components where colours, although similar enough to match the theme, did not exactly match, however design desicions were made based on the functionality of the component to ensure use case was clear.
 
 ![Button mashers main button]()  
 *Button Mashers Main Button*
