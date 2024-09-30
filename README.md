@@ -1,16 +1,16 @@
-# Button mashers
+![Button mashers logo](readme-images/logo-readme.png)
 
-![Button mashers responsive screenshot]()
+
+![Button mashers responsive screenshot](readme-images/Button-mashers-responsive-img.png)
 
 ## Introduction
 
-View live site: [Button mashers]()
+View live site: [Button mashers](https://button-mashers-11120a298309.herokuapp.com/)
 
-Any payments made using a valid debit/credit card will not be processed and the card will not be charged. No orders made will be fulfilled.
+Our micro-ecommerce site caters to fighting game enthusiasts who build custom controllers. We sell high-quality arcade controller parts like buttons and joysticks. Our products are designed for reliability and performance, ensuring every punch, kick, and combo is spot-on. We offer a wide variety of colors and styles, allowing for creative and personalized designs.
 
-For full Admin access to Django Admin panel with relevant sign-in credentials: [Button mashers Admin]()
 
-For access to Admin Dashboard frontend view with relevant sign-in credentials: [Button mashers Admin Dashboard]()
+For full Admin access to Django Admin panel with relevant sign-in credentials: [Button mashers Admin](https://button-mashers-11120a298309.herokuapp.com/admin/login/?next=/admin/)
 
 ## Table of Contents
 
@@ -58,7 +58,7 @@ For access to Admin Dashboard frontend view with relevant sign-in credentials: [
   - [Django Project SetUp](#django-project-setup)
     - [Elephant SQL](#elephant-sql)
   - [Heroku Deployment](#heroku-deployment)
-  - [AWS Config](#aws-config)
+  <!-- - [AWS Config](#aws-config) -->
     - [Media Folder Setup](#media-folder-setup)
   - [Clone Project](#clone-project)
   - [Fork Project](#fork-project)
@@ -70,11 +70,13 @@ For access to Admin Dashboard frontend view with relevant sign-in credentials: [
 
 ## Overview
 
+Buttonmashers is a arcade controller modding/customisation products store focusing on procuring the best components for high level players. Users are invited to:
+
 - View the store as Guests
 - Register for an Account
 - Browse products
 - View, add and edit products in their cart
-- Puchase items using paypal options
+- Puchase items
 
 ## Customer Goals
 
@@ -736,8 +738,11 @@ Image credits are as follows:
 ### Additional reading/tutorials/books/blogs
 
 
+
 ## Acknowledgements
 
-<!-- - A huge thanks to my family for their continued support during this project and Diploma and the many, many cups of coffee sent my way.  -->
-- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coach John Rearden and my personal facilitator Amy Richardson for their expert guidance and advice during this Bootcamp, which gave me the confidence to make the most out of every project.
+- A huge thanks to my wife Katie for her continued support during this project and bootcamp, through all tears for the many cups of coffee, the continued love and support. You are a blessing in my life 
+
+- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coach John Rearden and my personal facilitator Amy Richardson for their expert guidance and advice during this bootcamp, which gave me the confidence to make the most out of every project.
+
 - Thank you to my fellow students and Code Institute alumni for their guidance and support.
