@@ -93,10 +93,15 @@ Button Mashers aims to cultivate a loyal community of gaming enthusiasts who app
 
 ## Design Inspiration
 
-A simple logo, created using *logo reference here <----------*
+From the outset of the Button Mashers project, I envisioned a vibrant color palette that reflects the energy of arcade gaming, with bold hues and striking contrasts to create an engaging visual experience. The website maintains a clean and organized layout, utilizing ample white space to draw attention to our products and enhance the overall user experience. This design approach not only highlights our extensive range of arcade components but also captures the dynamic spirit of the gaming community.
 
-![button mashers logo] 
-*button mashers logo*
+created using https://www.textstudio.com/logo 
+
+A pixel art text header was chosen for the Button Mashers website to evoke a sense of nostalgia and excitement that resonates with the gaming community. 
+
+This distinctive style not only captures the essence of classic arcade games but also enhances visual engagement, enhancing key sections of the site.
+
+![Button mashers logo](readme-images/logo-readme.png)
 
 
 ![Hero Image]()
