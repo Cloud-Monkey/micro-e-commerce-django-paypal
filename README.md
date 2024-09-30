@@ -101,16 +101,15 @@ A pixel art text header was chosen for the Button Mashers website to evoke a sen
 
 This distinctive style not only captures the essence of classic arcade games but also enhances visual engagement, enhancing key sections of the site.
 
-![Button mashers logo](readme-images/logo-readme.png)
+![Button mashers logo](/readme-images/logo-readme.png)
 
+For the Button Mashers website, product images showcase arcade components against a neutral background on box elements, allowing customers to clearly see details of buttons, joysticks, and other peripherals. The included buttons stand out allowing the user to clearly see options to add the product to their cart or view the product in detail.
 
-![Hero Image]()
-*Image created by ....?*
+![Product box item display](/readme-images/product-box-item.png)
 
+The site's header dynamically updates to display the user's login status and the current number of items in their cart, providing visual feedback. Interactive notifications, appear after user actions to confirm operations or offer additional information.
 
-
-![Header Feedback](docs/readme_images/header_feedback.png)  
-*Header feedback is kept clean and intuitive*
+![Nav bar screenshot](/readme-images/nav-bar-dynamic.png) ![Sign out message](/readme-images/sign-out-message.png)
 
 ### Color Scheme
 
