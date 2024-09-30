@@ -9,7 +9,6 @@ View live site: [Button mashers](https://button-mashers-11120a298309.herokuapp.c
 
 Our micro-ecommerce site caters to fighting game enthusiasts who build custom controllers. We sell high-quality arcade controller parts like buttons and joysticks. Our products are designed for reliability and performance, ensuring every punch, kick, and combo is spot-on. We offer a wide variety of colors and styles, allowing for creative and personalized designs.
 
-
 For full Admin access to Django Admin panel with relevant sign-in credentials: [Button mashers Admin](https://button-mashers-11120a298309.herokuapp.com/admin/login/?next=/admin/)
 
 ## Table of Contents
@@ -80,7 +79,11 @@ Buttonmashers is a arcade controller modding/customisation products store focusi
 
 ## Customer Goals
 
+
+
 ## Business Goals
+
+Buttonmashers offers the business owners an intuitive Admin Dashboard that simplifies inventory and order management. Users can easily access detailed information about users and orders through the Admin Dashboard, which provides a direct link to the data stored in the Django Admin Panel.
 
 # UX/UI - User Experience/User Interface
 
