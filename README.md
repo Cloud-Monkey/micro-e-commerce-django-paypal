@@ -79,11 +79,16 @@ Buttonmashers is a arcade controller modding/customisation products store focusi
 
 ## Customer Goals
 
+Buttonmashers offers gamers a seamless and user-friendly shopping experience, focusing on high-quality, durable arcade components and peripherals. We encourage our customers to create accounts, unlocking access to exclusive features of shopping and the ability review/rate products.
+
+Our product range emphasizes longevity and performance, promoting sustainable gaming practices by reducing the need for frequent replacements. We consistently guide our customers towards premium, tournament-grade products that offer the best value in terms of quality and durability.
 
 
 ## Business Goals
 
 Buttonmashers offers the business owners an intuitive Admin Dashboard that simplifies inventory and order management. Users can easily access detailed information about users and orders through the Admin Dashboard, which provides a direct link to the data stored in the Django Admin Panel.
+
+Button Mashers aims to cultivate a loyal community of gaming enthusiasts who appreciate high-quality, durable arcade components and peripherals. The site's focus on premium arcade parts and accessories attracts players looking for authentic, tournament-grade gaming experiences.
 
 # UX/UI - User Experience/User Interface
 
