@@ -58,7 +58,6 @@ For full Admin access to Django Admin panel with relevant sign-in credentials: [
   - [Django Project SetUp](#django-project-setup)
     - [Elephant SQL](#elephant-sql)
   - [Heroku Deployment](#heroku-deployment)
-  <!-- - [AWS Config](#aws-config) -->
     - [Media Folder Setup](#media-folder-setup)
   - [Clone Project](#clone-project)
   - [Fork Project](#fork-project)
@@ -74,9 +73,10 @@ Buttonmashers is a arcade controller modding/customisation products store focusi
 
 - View the store as Guests
 - Register for an Account
+- Review and rate products
 - Browse products
 - View, add and edit products in their cart
-- Puchase items
+- Checkout and purchase items
 
 ## Customer Goals
 
