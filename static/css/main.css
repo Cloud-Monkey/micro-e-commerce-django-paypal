@@ -1,5 +1,5 @@
 body{
-	background-color: hsl(0, 0%, 98%);
+	background-color: hsl(0, 5%, 91%);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .bg-dark{
-	background-color: #4f868c!important;
+	background-color: #477b81!important;
 }
 
 #cart-icon{
@@ -121,3 +121,11 @@ h1,h2,h3,h4,h5,h6{
 .helptext {
 	visibility: hidden;
   }
+
+.product-title{
+	font-size: medium;
+}
+
+.product-prices{
+	font-size: medium;
+}

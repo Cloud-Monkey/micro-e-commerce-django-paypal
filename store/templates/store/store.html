@@ -5,9 +5,9 @@
 	{% for product in products %}
 	<div class="col-lg-4">
 		<div class="box-element product">
-			<img class="thumbnail" src="{{product.imageURL}}">
+			<img alt="product image" class="thumbnail" src="{{product.imageURL}}">
 			<hr>
-			<h6><strong>{{product.name}}</strong></h6>
+			<h1 class="product-title"><strong>{{product.name}}</strong></h1>
 			<hr>
 
             {% if user.is_authenticated %}
@@ -18,7 +18,7 @@
                 class="btn btn-outline-secondary add-btn update-cart">Add to Cart</a>
             {% endif %}
 			<a class="btn btn-outline-success" href="/product/{{ product.id }}">View</a>
-			<h4 style="display: inline-block; float: right"><strong>£{{product.price}}</strong></h4>
+			<h2 class="product-prices" style="display: inline-block; float: right"><strong>£{{product.price}}</strong></h2>
 
 		</div>
 	</div>
