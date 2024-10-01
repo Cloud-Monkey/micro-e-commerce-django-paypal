@@ -5,7 +5,8 @@
 	{% for product in products %}
 	<div class="col-lg-4">
 		<div class="box-element product">
-			<img class="thumbnail" alt="product image" src=" {{ product.featured_image.url }}">
+			<!-- product.featured_image.url  will go here for cloudinary when setup-->
+			<img class="thumbnail" alt="product image" src="{{product.imageURL}}">
 			<hr>
 			<h1 class="product-title"><strong>{{product.name}}</strong></h1>
 			<hr>
