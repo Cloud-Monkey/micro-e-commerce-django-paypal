@@ -5,7 +5,7 @@
 	{% for product in products %}
 	<div class="col-lg-4">
 		<div class="box-element product">
-			<img alt="product image" class="thumbnail" src="{{product.imageURL}}">
+			<img class="thumbnail" alt="product image" src=" {{ product.featured_image.url }}">
 			<hr>
 			<h1 class="product-title"><strong>{{product.name}}</strong></h1>
 			<hr>
