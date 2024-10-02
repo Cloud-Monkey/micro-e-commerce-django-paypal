@@ -10,15 +10,15 @@
 			<h1 class="product-title"><strong>{{product.name}}</strong></h1>
 			<hr>
 
-            {% if user.is_authenticated %}
-            <button data-product="{{product.id}}" data-action="add"
-                class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
-            {% else %}
-            <a href="{% url 'account_login' %}"
-                class="btn btn-outline-secondary add-btn update-cart">Add to Cart</a>
-            {% endif %}
+			{% if user.is_authenticated %}
+			<button data-product="{{product.id}}" data-action="add"
+				class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+			{% else %}
+			<a href="{% url 'account_login' %}" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</a>
+			{% endif %}
 			<a class="btn btn-outline-success view-btn" href="/product/{{ product.id }}">View</a>
-			<h2 class="product-prices" style="display: inline-block; float: right"><strong>£{{product.price}}</strong></h2>
+			<h2 class="product-prices" style="display: inline-block; float: right"><strong>£{{product.price}}</strong>
+			</h2>
 
 		</div>
 	</div>

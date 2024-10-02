@@ -70,8 +70,9 @@
                 <p class="review-created">{{ review.created_at }}</p>
                 <p>{{ review.body }}</p>
                 {% if user.is_authenticated and user == review.user %}
-                <button class="btn btn-edit" id="btn-edit" type="button" review_id="{{ review.id }}" review_body="{{ review.body }}"
-                    review_rating="{{ review.rating }}" product_id="{{ product.id }}">Edit</button>
+                <button class="btn btn-edit" id="btn-edit" type="button" review_id="{{ review.id }}"
+                    review_body="{{ review.body }}" review_rating="{{ review.rating }}"
+                    product_id="{{ product.id }}">Edit</button>
                 <button class="btn btn-delete" review_id="{{ review.id }}">Delete</button>
                 <form id="reviewForm" method="post" style="display: none;">
                     {{ review_form | crispy }}
