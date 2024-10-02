@@ -5,7 +5,6 @@
 	{% for product in products %}
 	<div class="col-lg-4">
 		<div class="box-element product">
-			<!-- product.featured_image.url  will go here for cloudinary when setup {{product.imageURL}} usually -->
 			<img class="thumbnail" alt="product image" src="{{product.featured_image.url}}">
 			<hr>
 			<h1 class="product-title"><strong>{{product.name}}</strong></h1>
@@ -18,7 +17,7 @@
             <a href="{% url 'account_login' %}"
                 class="btn btn-outline-secondary add-btn update-cart">Add to Cart</a>
             {% endif %}
-			<a class="btn btn-outline-success" href="/product/{{ product.id }}">View</a>
+			<a class="btn btn-outline-success view-btn" href="/product/{{ product.id }}">View</a>
 			<h2 class="product-prices" style="display: inline-block; float: right"><strong>£{{product.price}}</strong></h2>
 
 		</div>

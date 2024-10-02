@@ -8,8 +8,8 @@
 
 <head>
 	<title>Button Mashers</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<!-- meta info tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1" />
 
 	<!-- bootstrap cdn link -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -41,35 +41,6 @@
 			return cookieValue;
 		}
 		const csrftoken = getToken('csrftoken');
-
-		// This is for an anonymous user
-		// function getCookie(name) {
-		// 	// Split cookie string and get all individual name=value pairs in an array
-		// 	const cookieArr = document.cookie.split(";");
-
-		// 	// Loop through the array elements
-		// 	for (let i = 0; i < cookieArr.length; i++) {
-		// 		const cookiePair = cookieArr[i].split("=");
-
-		// 		/* Removing whitespace at the beginning of the cookie name
-		// 		and compare it with the given string */
-		// 		if (name == cookiePair[0].trim()) {
-		// 			// Decode the cookie value and return
-		// 			return decodeURIComponent(cookiePair[1]);
-		// 		}
-		// 	}
-
-		// 	// Return null if not found
-		// 	return null;
-		// }
-		// let cart = JSON.parse(getCookie('cart'))
-
-		// if (cart == undefined) {
-		// 	cart = {}
-		// 	console.log('Cart Created!', cart)
-		// 	document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
-		// }
-		// console.log('Cart:', cart)
 
 	</script>
 
@@ -104,7 +75,7 @@
 
 				{% if cartItems %}
 				<a href="{% url 'cart' %}">
-					<img id="cart-icon" src="{% static 'images/cart.png' %}">
+					<img id="cart-icon" alt="shopping cart icon" src="{% static 'images/cart.png' %}">
 				</a>
 				<p id="cart-total">{{cartItems}}</p>
 				{% endif %}

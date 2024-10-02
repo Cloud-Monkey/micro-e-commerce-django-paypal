@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .bg-dark{
-	background-color: #477b81!important;
+	background-color: #1F212A!important;
 }
 
 #cart-icon{
@@ -95,11 +95,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .user-status{
-	color: #ececec;
+	color: #ffffff!important;
 }
 
 .btn-signup{
-	/* background-color: red; */
 	border: 2px solid rgb(35, 35, 35);
 }
 
@@ -128,4 +127,21 @@ h1,h2,h3,h4,h5,h6{
 
 .product-prices{
 	font-size: medium;
+}
+
+.view-btn{
+	border: 2px solid green;
+	font-weight: bold;
+}
+
+.add-btn{
+	border: 2px solid #1F212A;
+	color: #1F212A;
+	font-weight: bold;
+}
+
+.product{
+	border-radius: 8px;
+	border: 1px solid rgb(34, 27, 59);
+
 }
