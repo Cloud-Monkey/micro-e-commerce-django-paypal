@@ -468,13 +468,10 @@ When developing this project it was important to me to have a separate Admin are
 - Python
 - [Git](https://git-scm.com/) used for version control.
 - [Github](https://www.github.com) used for online storage of codebase and Projects tool.
-- [CodeAnywhere](https://app.codeanywhere.com) as an online, cloud-based IDE for development.
 - [Figma](https://www.figma.com) for project design planning and wireframe creation.
-- [Adobe Color](https://color.adobe.com) for colour theme creation and accessibility checkers.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the 'Button mashers' application.
 - [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
-- [Procreate](https://procreate.com/) for image creation and editing.
 
 ## Libraries & Frameworks
 
@@ -496,15 +493,12 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 
 ## Tools & Programs
 - [ImageCompressor](https://imagecompressor.com/) for compressing PNG/WEbp files
-- [Image ReSizer](https://www.simpleimageresizer.com/) for reducing image size
-- [EZGif](<https://ezgif.com/>) for gif conversion.
 - [Convertio](https://convertio.co/) for file conversion to PNG, WEBP.
 - [Tiny Png](https://tinypng.com/) for file size reduction.
 - [Lucidchart](https://www.lucidchart.com/pages) for ERD (entity relationship diagram) creation.
 - [Favicon](https://favicon.io/) for converting an icon into a favicon.
 - [amiresponsive](https://ui.dev/amiresponsive) for screenshot of Button mashers on different screen sizes.
 - [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and Django documentation into more understandable chunks.
-- [Mailchimp](https://mailchimp.com/) is used for marketing with their newsletter subscription service.
 
 # Testing
 

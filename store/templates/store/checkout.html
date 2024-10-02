@@ -3,7 +3,7 @@
 {% block content %}
 <div class="row">
 	<div class="col-lg-6">
-		<div class="box-element" id="form-wrapper">
+		<div class="box-element product" id="form-wrapper">
 			<form id="form">
 				<div id="user-info">
 					<div class="form-field">
@@ -41,7 +41,7 @@
 		</div>
 
 		<br>
-		<div class="box-element hidden" id="payment-info">
+		<div class="box-element hidden product" id="payment-info">
 			<small>Paypal Options</small>
 			<button id="make-payment">Make payment</button>
 		</div>
@@ -49,7 +49,7 @@
 	</div>
 
 	<div class="col-lg-6">
-		<div class="box-element">
+		<div class="box-element product">
 			<a class="btn btn-outline-dark" href="{% url 'cart' %}">&#x2190; Back to Cart</a>
 			<hr>
 			<h3>Order Summary</h3>
