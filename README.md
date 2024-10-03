@@ -233,19 +233,6 @@ Button Mashers was designed to provide a dependable user experience, aiming to e
 
 # Features
 
-## User View - Guests/Account Holders
-
-| Feature   | Guest | Registered, Account Holder |
-|-----------|-------------------|-----------------|
-| Home Page | Visible           | Visible         |
-| Account  | Not Visible - 'Account' option only appears for registered, logged-in users | Visible and full feature interaction available |
-| All Products  | Visable - items can be viewed and added to Bag, Wishlist function not available | Visible and full feature interaction available |
-| Categories   | Visible - items can be viewed and added to Bag, Wishlist function not available | Visible and full feature interaction available |
-| Read   | Visible | Visible |
-| Search  | Visible | Visible |
-| Contact Us/Newsletter | Visible | Visible |
-| Admin Dashboard | Not Visible | Only visible to Admin |
-
 ## CRUD Functionality
 
 Customers have full CRUD functionality with their prospective purchases. They may edit their cart, add more items or remove all items. They may also edit their delivery details if they are registered, logged-in users. Button mashers Admin have access to the Admin Dashboard which allow them full CRUD over Product Management and Review posting.
@@ -349,7 +336,7 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 
 # Testing
 
-- For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
 
 # Deployment
 
@@ -361,7 +348,7 @@ To begin this project from scratch, you must first create a new GitHub repositor
 2. Navigate to the above CI Full Template.
 3. Click '**Use this template**' -> '**Create a new repository**'.
 4. Choose a new repository name and click '**Create repository from template**'.
-5. In your new repository space, click the purple CodeAnywhere (if this is your IDE of choice) button to generate a new workspace.
+5. In your new repository space, click the gitpod open button to generate a new workspace.
 
 ## Django Project SetUp
 
