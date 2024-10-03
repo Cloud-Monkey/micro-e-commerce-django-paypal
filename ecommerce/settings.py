@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import cloudinary
 import os
 import dj_database_url
 if os.path.isfile("env.py"): import env
@@ -170,3 +171,8 @@ CLOUDINARY_STORAGE = {
     "API_KEY": os.environ.get("CLOUDINARY_API_KEY"),
     "API_SECRET": os.environ.get('CLOUDINARY_API_SECRET'),
 }
+
+# config to ensure https
+cloudinary.config(
+    secure=True,
+)
