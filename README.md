@@ -209,7 +209,7 @@ In the skeleton and surface planes of my project, I focused on creating an intui
 
 ### Database Schema
 
-![Button mashers Eco Eco-Ecommerce ERD]()  
+<!-- ![Button mashers Eco Eco-Ecommerce ERD]()  
 *Database Schema (ERD) for Button mashers displaying relationships between feature components saved within the database*
 
 [Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for Button mashers. To satisfy the assessment criteria, multiple models were created to personalise the Button mashers project. These include:
@@ -218,23 +218,18 @@ In the skeleton and surface planes of my project, I focused on creating an intui
 - **Product**: Carbon Footprint and Carbon Saved have been added to the Boutique Ado Product model to handle the carbon total logic. The Admin can enter these values into the Product Management forms to be made available for the bag/checkout logic to process them.
 - **Wishlist**: The Wishlist model takes simple values of the connected user and the product id to display the items in a list for the individual user.
 
-Future Feature models are visible in the ERD for Reactions, Reviews and Discount Codes. These will be incorporated into the next version of Button mashers. At the moment they are beyond the MVP.
+Future Feature models are visible in the ERD for Reactions, Reviews and Discount Codes. These will be incorporated into the next version of Button mashers. At the moment they are beyond the MVP. -->
 
 ### Defensive Design
 
-Button mashers was developed to ensure a reliable user experience. It's intention was to cause no frustrations for the users and to ensure they return to make further purchases.
+Button Mashers was designed to provide a dependable user experience, aiming to eliminate any frustrations for users and encouraging them to return for future purchases.
 
 - Django AllAuth for user registration/log in/log out
 - Input validation and error messages provide feedback to the user to guide them towards the desired outcome. 
-- Unregistered users are diverted to the Sign Up page from restricted access pages. 
-- Authentication processes control edit/delete icons to reveal them to the Admin only, this is further secured through accessing of CRUD functionalities in the Admin Dashboard. 
-- Deletion of data is confirmed through an additional modal, double-checking with the user.
-- Error pages are displayed with 'Home' buttons to help users get back on track. 
+- Unregistered users are diverted to the Sign Up page from restricted actions. 
+- Authentication processes control edit/delete buttons to reveal them to the Admin only, this is further secured through accessing of CRUD functionalities in the Admin Dashboard. 
+- Deletion of data is confirmed through a message, double-checking with the user.
 - Testing and validation of features completes the process.
-
-**CSRF Tokens**
-
-CSRF (Cross-Site Request Forgery) tokens are included in every form to help authenticate the request with the server when the form is submitted. Absence of these tokens can leave a site vulnerable to attackers who may steal a user's data.
 
 # Features
 
