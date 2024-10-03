@@ -13,7 +13,7 @@ For full Admin access to Django Admin panel with relevant sign-in credentials: [
 
 ## Table of Contents
 
-- [Button mashers](#Button mashers)
+- ![Button mashers logo](readme-images/logo-readme.png)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -28,15 +28,7 @@ For full Admin access to Django Admin panel with relevant sign-in credentials: [
     - [Site Goals](#site-goals)
   - [Agile Methodologies](#agile-methodologies)
     - [MoSCoW Prioritization](#moscow-prioritization)
-    - [Sprints](#sprints)
-  - [Marketing](#marketing)
   - [User Stories](#user-stories)
-    - [Visitor User Stories](#visitor-user-stories)
-    - [Epic - Home View \& User Account](#epic---home-view--user-account)
-    - [Epic - Products](#epic---products)
-    - [Epic - Basket Management \& Purchasing](#epic---basket-management--purchasing)
-    - [Epic - Wishlist](#epic---wishlist)
-    - [Epic - Newsletter](#epic---newsletter)
   - [Scope Plane](#scope-plane)
   - [Structural Plane](#structural-plane)
   - [Skeleton \& Surface Planes](#skeleton--surface-planes)
