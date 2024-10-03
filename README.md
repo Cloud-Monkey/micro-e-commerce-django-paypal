@@ -129,235 +129,87 @@ The above colours were chosen to be vibrant and bold but also cohesive enough to
 
 Compromises were made with Bootstrap components where colours, although similar enough to match the theme, did not exactly match, however design desicions were made based on the functionality of the component to ensure use case was clear.
 
-![Button mashers main button]()  
-*Button Mashers Main Button*
-
-![Button mashers Color Scheme accessibility Check]()  
-*Button mashers Color Accessibility Check*
-
-![Button mashers Color Scheme Contrast Check]()  
-* Button mashers Color Contrast Check - Main*
-
-![Button mashers Color Scheme Contrast Check]()  
-*Button mashers Color Contrast Check - Button*
-
 ### Typography & Iconography
 
-![Button mashers Font Pairing](docs/readme_images/fontpair.png)
-*Button mashers Font Pairing*
-
-Karla and Inconsolata were both imported from [Google Fonts](https://fonts.google.com/). They were chosen for their compatibility and aesthetics that aligned with the store brand. Karla is a sans-serif typeface with a clean and modern design which delivers a fresh and simple look to the store. Inconsolata is a monospace font which allows clear display of descriptions and information about the products. Together they apply enough textual contrast to allow for a good flow of information to the user, improving user experience. Using Google Fonts allows for faster, reliable loading times for the website, ensuring the user stays when they visit.
-
-In development, 'Karla' was identified by variable ```--title```, whilst 'Inconsolata' was set as ```--main-font``` within the CSS file. Similar to my setup for the project's colours, using variables helped to speed up the frontend process.
+In developing my full-stack Django site, I chose to utilize Bootstrap's default fonts to keep the project scope manageable. By leveraging these pre-designed fonts, I was able to maintain a consistent and professional aesthetic without the added complexity of custom typography. This decision not only streamlined the design process but also allowed me to focus on core functionalities and features, ensuring that I could deliver a high-quality user experience efficiently. Using Bootstrap's default fonts provided a solid foundation for my site's visual identity while simplifying development and enhancing overall productivity.
 
 # Project Planning
 
+
+
 ## Strategy Plane
 
-The primary objective was to create an e-commerce store that satisfied the assessment criteria of the Code Institute's Project 5: E-Commerce Module. The store must provide the expected functions of a responsive e-commerce store using Stripe as a payment system, user/guest views for authentication and store features, some extra features of my choosing, wishlist and articles, and demonstration of some marketing/SEO skills. Orders on Button mashers were to display the carbon footprint totals and carbon saved, (where data is available, see below), reflecting the pressing need for eco-consciousness in these modern times. The User, whether paying customer or just browsing, must receive the best in UX and feel that Button mashers is relatable and trust-worthy. 
+In developing my project, I adopted an Agile methodology for the strategy plane to ensure flexibility and responsiveness throughout the development process.
 
-The site's design and graphic assets were collected through various copyright-free image websites. Images were edited for the website to be cohesive. The hero-image on the home page and above, was created by myself in Figma. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project's CSS files. 
+The primary goal of the site was to display products to customers, give them the ability to add items to heir cart when logged in/registered and complete a purchase. The functionality to review and rate products was also important to satisfy CRUD criteria on the project.
 
-If a customer chooses to make a purchase then they are given consistent feedback through the use of 'toasts' messages and confirmation emails. The purchasing process is presented using Stripe payment handlers, obtained and setup using [Stripe's](https://stripe.com/docs) documentation and website.
+By breaking down the project into smaller, manageable tasks and prioritizing them based on effort and value, I was able to maintain a focused and iterative development cycle
 
+The site's design and graphic assets were collected through various copyright-free image websites. Images were edited for the website to be cohesive. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Additional customization for buttons, forms, modals, alerts, and user feedback processes has been incorporated into the project's CSS files.. 
 
 ### Site Goals
 
 - Site provides enjoyable experience for shoppers.
-- Customers are educated about carbon footprints/credits/sustainable products through the checkout process and through reading the site articles and FAQ's.
-- Customers feel informed that they are making a good choice shopping with Button mashers.
+- Site is clear and accessable.
+- Customers feel informed that they are making a good choice of products with Button mashers.
 - UX remains similar across screen sizes.
 - CRUD functionalities work as intended with easy to use frontend forms.
-- Scalable site to allow for extra features in the future.
+- Scalable site to allow for extra features in the future (Paypal, build forums etc)
 
 ## Agile Methodologies
 
-Button mashers followed Agile planning methodologies to its completion. [GitHub Projects](https://github.com/users/amylour/projects/6) provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Milestones and Sprints. Keeping focused on individual sections as I built Button mashers reduced the number of bugs and human errors.
+Button mashers followed Agile planning methodologies to its completion. [GitHub Projects](https://github.com/users/Cloud-Monkey/projects/5/views/1) provided an ideal platform to create issues, boards and milestones for each of the project's Epics. By utilizing labels, I was able to efficiently pinpoint my upcoming tasks and categorize them into the relevant Milestones and Sprints. Concentrating on specific components while developing Button Mashers helped minimize bugs and reduce the likelihood of human errors.
 
 ### MoSCoW Prioritization
 
 I chose to follow the MoSCoW Prioritization method for Button mashers, identifying and labeling my:
 
-- **Must Haves**: the 'required', critical components of the project. Completing my 'Must Haves' helped me to reach the MVP (Minimum Viable Product) for this project.
-- **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
-- **Could Haves**: these are the features that are a 'bonus' to the project, it would be nice to have them in this phase, but only if the most important issues have been completed first and time allows.
-- **Won't Haves**: the features or components that either no longer fit the project's brief or are of very low priority for this release.
+**Must Haves** These are the essential, non-negotiable elements of the project. Implementing these 'Must Haves' was crucial in achieving the Minimum Viable Product (MVP) status for this initiative.
 
-### Sprints
+**Should Haves** While important and beneficial, these features are not critical for the initial MVP phase. 'Must Haves' take precedence over 'Should Haves' in terms of development priority.
 
-My Sprints were broken down into appropriately sized chunks from the beginning and I followed them to the best of my abilities. It is difficult to quantify the time taken exactly for each sprint as running a busy household outside of the course meant the hours the project was completed in hours outside of the normal working week. I have done my best to record them below. They are representative of a general timeframe of focus on the project areas.
+**Could Haves** These represent additional enhancements that would augment the project. They're desirable but should only be pursued after addressing more critical components and if resources permit.
 
-| Sprint No. | Sprint Content | Start/Finish Dates |
-|------------|----------------|--------------------|
-|    # 1     | Project Setup  |   01/08/23 - 20/08/23   |
-|    # 2     | AllAuth & Basic Navigation |  20/08/23 - 22/09/23  |
-|    # 3     | Product Views & CRUD       |  22/09/23 - 02/09/23  |
-|    # 4     | Shopping Bag Functionality & Styling | 02/09/23 - 15/09/23   |
-|    # 5     | Wishlist Feature   |   15/09/23 - 17/09/23       |
-|    # 6     | Carbon Footprint & Articles  |  17/09/23 - 22/09/23   |
-|    # 7     | Admin Dashboard        |  22/09/23 - 26/09/23    |
-|    # 8     | User/Customer Correspondence  |  26/09/23 - 02/10/23   |
-|    # 9     | Documentation & Testing   |    02/10/23 - 15/10/23   |
-
-## Marketing
-
-An [Button mashers Facebook Page](https://www.facebook.com/profile.php?id=61552368530738) was created to demonstrate promotion of the Button mashers store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. Button mashers also offers a newsletter subscription service through MailChimp. The benefit of both of these services is that the customer is not forced to sign up to either and potentially worry that they will be spammed with an unnecessary amount of information. Button mashers avoids this in order to keep its brand clean and uphold its eco-friendly efforts.
-
-Within the head's meta tags of the base template are researched keywords and a description of Button mashers's goal as a business. These keywords have been researched using[Wordtracker](https://www.wordtracker.com/) to ensure that both short-tail and long-tail keywords are included. Keywords such as 'carbon-neutral', 'zero waste' and 'practical products' aim to reach most of the market, with additional descriptive key phrases such as 'buy longlife products' and 'buy once products' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Vegan', 'Organic' and 'Bamboo' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
-
-In addition to this, sitemap.xml and robots.txt files are included to increase the site's visibility. These files are essential for SEO (Search Engine Optimisation). The sitemap.xml was generated using [XML Sitemap](https://www.xml-sitemaps.com/) and included in the root folder of the project. A robots.txt file was created in the root folder to instruct search engine crawlers on how to access and crawl the site's pages.
-
-![Button mashers Facebook Business Page]()
-*Button mashers Facebook Business Page*
+**Won't Haves** This category encompasses features that have been deprioritized or deemed unsuitable for the current project scope. These items are either no longer aligned with the project's objectives or are considered low-priority for the present release cycle.
 
 ## User Stories
 
-User stories and features were recorded and managed on [GitHub Projects](https://github.com/users/amylour/projects/6)
-
-### Visitor User Stories
-
-| User Story | Priority |
-|------------|------------------|
-| As a **customer**, I can **view the site's home page** so that I can **understand the site's intentions and purpose**. | **MUST HAVE** |
-| As a **customer**, I can **see and use the navigation bar** so that I can **make my way around the site and get to where I would like**. | **MUST HAVE** |
-| As a **customer**, I can **enter text into the search bar** so that I can **search for a specific item**. | **MUST HAVE** |
-
-### Epic - Home View & User Account
-
-| User Story | Priority |
-|------------------|---------------------|
-| As a **customer** I can **create and manage an account with Button mashers** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
-| As a **customer**, I can **edit my personal details on my account** so that I can **keep them up to date**. | **MUST HAVE** |
-| As a **site user**, I can **enter my login details** so that I can **login in to my account**. | **MUST HAVE** |
-| As a **site user**, I can **click on the visible links in the footer** so that I can **view the relevant information and destinations**. | **MUST HAVE** |
-| As a **site user**, I can **register my email and receive a validation link via email** so that I can **create an account with Button mashers to track my spending and purchases**. | **SHOULD HAVE** |
-| As a **customer**, I can **use the Contact Us form** so I can **send a message to the business/site admin**. | **SHOULD HAVE** |
-
-### Epic - Products
-
-| User Story | Priority |
-|------------------|---------------------|
-| As a **site user** I can **interact with sorting and view features on the 'All Products' page** so that I can **improve my shopping experience on the site**. | **MUST HAVE** |
-| As a **site user**, I can **click on a navbar item for a specific category** so that I can **choose to view a smaller amount of related products**. | **MUST HAVE** |
-| As a **customer**, I can **choose an individual product** so that I can **view its description, price, colours, sizes available etc**. | **MUST HAVE** |
-| As a **site admin** I can **add a product to my inventory using a frontend from** so that I can **increase my range/amount of products available on site**. | **MUST HAVE** |
-| As a**site admin**, I can **edit existing inventory from a frontend form** so I can **change the quantity of stock, sizes, colours or edit products description, price or image**. | **MUST HAVE** |
-| As a **site admin**, I can **delete product from the inventory using a frontend form** so that I can **remove it from sale**. | **MUST HAVE** |
-
-### Epic - Basket Management & Purchasing
-
-| User Story | Priority |
-|------------------|---------------------|
-| As a **customer** I can **create and manage an account with Button mashers** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
-| As a **customer**, I can **click on 'Add to Bag' in my product view**so that I can **add the product to my bag**. | **MUST HAVE** |
-| As a **customer**, I can **increase/decrease/remove quantities of a product in my bag** so that I can **have control over what I wish to purchase**. | **MUST HAVE** |
-| As a **customer**, I can **view my bag total from any page** so that I can **keep track of my potential spending**. | **MUST HAVE** |
-| As a **customer**, I can **view my running total of carbon saved when I add products** so that I can **see how much carbon my purchases would had saved in their production vs non eco-friendly products of the same type**. | **MUST HAVE** |
-| As a **customer**, I can **view my total carbon footprint saving on checkout and it's associated climate impact/lifestyle changes** so that I can **understand the equivalent value of carbon saved versus purchasing the same non eco-friendly products**. | **MUST HAVE** |
-| As a **customer**, I can **checkout my products securely** so that I can **complete my purchase**. | **MUST HAVE** |
-| As a **customer**, I can **receive an email after purchasing** so that I can **confirm my purchase and keep a record of my order**. | **MUST HAVE** |
-| As a **site user** I can **view error pages with 'Home' links** so that I can **return to the main page if a page is missing or forbidden**. | **MUST HAVE** |
-
-### Epic - Wishlist
-
-| User Story | Priority |
-|------------------|---------------------|
-| As a **logged-in user** I can **click the 'Add to Wishlist' button** so that I can **keep a record of my favourite items**. | **COULD HAVE** |
-| As a **logged-in user** I can **click the 'Remove' icon beside my Wishlist item** so that I can **remove that product from my Wishlist**. | **COULD HAVE** |
-
-### Epic - Newsletter
-
-| User Story | Priority |
-|------------------|---------------------|
-| As a **customer**, I can **enter my details into the newsletter form** so I can **receive emails about products or environmental issues/climate saving tips**. | **SHOULD HAVE** |
+User stories and features were recorded and managed on [GitHub Projects](https://github.com/users/Cloud-Monkey/projects/5/views/1)
 
 ## Scope Plane
 
-To focus on the learning of the Stripe API and webhook handlers that would ultimately drive the inner workings of the project, I kept my Button mashers scope lower than my previous project, FreeFido. A working e-commerce store was essential so I initially planned to keep to the MVP to ensure that I would complete the project successfully. Especially with the project being my final one for this Diploma, a rigorous year of learning left me ecstatic with my progress but cautious not to fall at the final hurdle from fatigue. However, through the planning stages I realised that I wanted to push further with the theme of an eco store and introduce carbon footprint as a currency that we may see in the future in the form of carbon credits.
+To focus on the CRUD functionality of the project and learning the new framework of Django, I kept my Button mashers scope lower than some of my previous projects, A fully working e-commerce store was not essential, so I initially planned to keep to the MVP to ensure that I would complete the project successfully.
 
-Adding an Articles feature posted solely by the Admin of the website felt important to give more information to the customers on climate-change and manufacturing processes and their environmental impacts. An additional Wishlist feature would complement the site as some of the items have a higher price point due to their robust and eco-friendly manufacturing processes and longevity and the customer may like to purchase them at a later date.
+Features such as a gallery of projects built by customers, an about us page, footer with links, paypal integration were all planned for a future itteration.
 
-Django's MVT framework allowed these features to be built quickly and addition of an Admin frontend panel for managing products and articles created a robust e-commerce site that could start taking orders tomorrow.
+Django's MVT framework allowed these features to be built quickly and addition of an Admin frontend panel for managing products and articles created a robust e-commerce site that could start taking orders once paypal is integrated.
 
 Essential features were:
 - User Accounts with AllAuth
-- Payment system with Stripe
-- Articles creation and management - Full CRUD
-- Product inventory management - Full CRUD
-- Shopping UX with Bag and Checkout processes - Full CRUD
+- Reviews creation and management - Full CRUD
+- Product inventory management for Admin - Full CRUD
+- Shopping UX with Cart and Checkout processes - Full CRUD
 - Site responsivity
-- Business details to inform the user
     
 ## Structural Plane
 
-Button mashers is built using Bootstrap, with Code Institute's Boutique Ado e-commerce project as its foundation. However, I picked apart the structure and styling to fit my own vision and changed quite a bit of the code. In particular I simplified the navbar and made the delivery banner a dropdown source of information, as is common with many modern e-commerce applications. Icons were sourced from Fontawesome and Flaticon through the wireframing process in Figma. The typography was chosen to give a clean, strong reading experience for the user. The Button mashers icon was used as the Favicon. This is also repeated through the newsletter email.
+Button mashers is built using Bootstrap and Django incorporating both Python and Javascript with Code Institute's Blog walkthrough as a foundation. I changed structures and styling to fit my own vision and had to add a lot of my own functionality to get cart and checkout features fully working.
 
-A dashed forest green 2px border is used for form fields throughout the project to replace browsers default blue highlight. Form validation has been left with it's original styling as no change was needed. Bootstrap allowed for easy transition between screen sizes as many ecommerce purchases are made using our mobiles, so this was a priority focus. Bootstrap components such as forms, an accordion section and a product carousel raised the spec of the project, to give it a professional finish.
+A solid green 2px border is used for view buttons on products to replace bootstraps default styling and address contrast issues. Form validation has been left with it's original styling as no change was needed. Bootstrap allowed for easy transition between screen sizes as many ecommerce purchases are made using our mobiles, so this was a priority focus. Bootstrap components such as forms also gave an acceptable finish with minimal or no styling.
 
 ## Skeleton & Surface Planes
 
+In the skeleton and surface planes of my project, I focused on creating an intuitive and visually appealing user interface that enhances the overall user experience. The skeleton plane involved carefully structuring the layout and navigation of the website, ensuring that users can easily find and interact with key features such as product listings, shopping cart, and user reviews. 
+
 ### Wireframes
 
-[Figma](https://www.figma.com) was used to create basic wireframes for Button mashers. I had a vision of what the site would look like from the beginning so the planning process went smoothly. Figma allows easy creation of wireframes to the appropriate frame sizes for different screens. Addition of icons and extra design features is easy with their Plugins component which can connect to Flaticon for example.
+[Scene.io](https://www.scene.io/) was used to create initial wireframes for Button mashers. I had a good understanding of what the site would look like and planning followed this initial outline. Although the scope was rolled back to a simple three page design during the iterative process.
 
-<details open>
-    <summary>Desktop/Tablet Home Page Wireframe</summary>  
-    <img src="docs/readme_images/wf_home_dt.png">  
-</details>
-
-<details>
-    <summary>Mobile Home Page Wireframe</summary>  
-    <img src="docs/readme_images/wf_home_mob01.png">  
-</details>
-
-<details>
-    <summary>Mobile Home Page Wireframe</summary>  
-    <img src="docs/readme_images/wf_home_mob02.png">  
-</details>
-
-<details open>
-    <summary>Desktop/Tablet/Mobile All Products Page Wireframe</summary>  
-    <img src="docs/readme_images/wf_proddet.png">  
-</details>
-
-<details open>
-    <summary>Desktop/Tablet Product Page Wireframe</summary>  
-    <img src="docs/readme_images/wf_prod.png">  
-</details>
-
-<details>
-    <summary>Shopping Bag Wireframe</summary>  
-    <img src="docs/readme_images/wf_bag.png">  
-</details>
-
-<details>
-    <summary>Bag Contents Toast Wireframe</summary>  
-    <img src="docs/readme_images/wf_toast_bag.png">  
-</details>
-
-<details open>
-    <summary>Mobile Menu & Auth Pages Wireframe</summary>  
-    <img src="docs/readme_images/mob_menu_auth_wf.png">  
-</details>
-
-<details>
-    <summary>Desktop Register Page Wireframe</summary>  
-    <img src="docs/readme_images/wf_reg.png">  
-</details>
-
-<details>
-    <summary>Desktop SignIn Page Wireframe</summary>  
-    <img src="docs/readme_images/wf_signin.png">  
-</details>
-
-<details>
-    <summary>Desktop SignOut Wireframe</summary>  
-    <img src="docs/readme_images/wf_signout.png">  
-</details>
+![Wireframes](/readme-images/wireframe-img.png)
 
 ### Database Schema
 
-![Button mashers Eco Eco-Ecommerce ERC]()  
+![Button mashers Eco Eco-Ecommerce ERD]()  
 *Database Schema (ERD) for Button mashers displaying relationships between feature components saved within the database*
 
 [Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for Button mashers. To satisfy the assessment criteria, multiple models were created to personalise the Button mashers project. These include:
