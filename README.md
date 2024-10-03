@@ -230,9 +230,17 @@ Customers have full CRUD functionality with their prospective purchases. They ma
 
 **Header & Navigation - All Users**
 
-**Home Page - All Users**
+**Store Page - All Users**
 
-**Delivery Banner - All Users**
+**Add to cart - Registered Users**
+
+**View - All Users**
+
+**Cart - Registered Users**
+
+**Checkout - Registered Users**
+
+**Add/Edit/Delete Reviews - Registered Users**
 
 **All Auth - All Users who wish to create an account**
 
@@ -281,7 +289,7 @@ When developing this project it was important to me to have a separate Admin are
 
 Libraries and frameworks used were dictated by the CI Django blog walkthrough from our course material with the Code Institute. This was supplemented by my own additions that were neccessary to complete the project.
 
-- [Django v3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/) 
+- [Django v4.2.16](https://docs.djangoproject.com/en/4.2/releases/3.2/) 
 - [AllAuth v0.41](https://django-allauth.readthedocs.io/) for user authentication and account management.
 - [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) for template rendering.
 - [Crispy Forms](https://pypi.org/project/crispy-bootstrap4/) for form rendering.
@@ -289,7 +297,8 @@ Libraries and frameworks used were dictated by the CI Django blog walkthrough fr
 - [django-storages](https://django-storages.readthedocs.io/en/latest/) for handling static and media files.
 - [gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/) apure-Python WSGI server for UNIX.
 - [oauthlib](https://pypi.org/project/oauthlib/) OAuth request-signing logic.
-- [psycopg2](https://pypi.org/project/psycopg2/) s PostgreSQL database adapter for Python.
+- [psycopg2](https://pypi.org/project/psycopg2/) PostgreSQL database adapter for Python.
+- [pillow v10.4.0](https://pypi.org/project/pillow/) Allows images upload in admin panel.
 
 ## Tools & Programs
 - [Towebp](https://towebp.io/) for compressing PNG/WEbp files
@@ -434,21 +443,34 @@ A copy of the original repository can be made through GitHub. Please follow the 
 
 The following blogs/tutorials complimented my learning for this project:
 
+- Code institue "For the love of Blog" walkthrough (https://learn.codeinstitute.net/courses)
+- Django Ecommerce Website Walkthrough (https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng)
+- W3 Schools (https://www.w3schools.com/)
+- Perplexity AI (https://www.perplexity.ai/)
+- Bootstrap Documentation (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Django Documentation (https://www.djangoproject.com/)
 
 ## Media
 
 Image credits are as follows:
 
-
+- Favicon generated using (https://favicon.io/)
+- Product Images taken from (https://arcadeshock.com/)
 
 ### Additional reading/tutorials/books/blogs
 
-
+- medium (https://medium.com/)
+- Geeks for Geeks ()
+- python documentation (https://www.python.org/)
+- W3 Schools (https://www.w3schools.com/)
+- Perplexity AI (https://www.perplexity.ai/)
+- Bootstrap Documentation (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Django Documentation (https://www.djangoproject.com/)
 
 ## Acknowledgements
 
 - A huge thanks to my wife Katie for her continued support during this project and bootcamp, through all tears for the many cups of coffee, the continued love and support. You are a blessing in my life 
 
-- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coach John Rearden and my personal facilitator Amy Richardson for their expert guidance and advice during this bootcamp, which gave me the confidence to make the most out of every project.
+- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coaches John Rearden and Roo MacArthur also my personal facilitator Amy Richardson for their expert guidance and advice during this bootcamp, which gave me the confidence to make the most out of every project.
 
-- Thank you to my fellow students and Code Institute alumni for their guidance and support.
+- Thank you to my fellow students and Code Institute alumni for their guidance, support and good humour.
