@@ -36,7 +36,6 @@ For full Admin access to Django Admin panel with relevant sign-in credentials: [
     - [Database Schema](#database-schema)
     - [Defensive Design](#defensive-design)
 - [Features](#features)
-  - [User View - Guests/Account Holders](#user-view---guestsaccount-holders)
   - [CRUD Functionality](#crud-functionality)
   - [Features Showcase](#features-showcase)
   - [Future Features](#future-features)
@@ -126,8 +125,6 @@ Compromises were made with Bootstrap components where colours, although similar 
 In developing my full-stack Django site, I chose to utilize Bootstrap's default fonts to keep the project scope manageable. By leveraging these pre-designed fonts, I was able to maintain a consistent and professional aesthetic without the added complexity of custom typography. This decision not only streamlined the design process but also allowed me to focus on core functionalities and features, ensuring that I could deliver a high-quality user experience efficiently. Using Bootstrap's default fonts provided a solid foundation for my site's visual identity while simplifying development and enhancing overall productivity.
 
 # Project Planning
-
-
 
 ## Strategy Plane
 
@@ -227,14 +224,7 @@ Button Mashers was designed to provide a dependable user experience, aiming to e
 
 ## CRUD Functionality
 
-Customers have full CRUD functionality with their prospective purchases. They may edit their cart, add more items or remove all items. They may also edit their delivery details if they are registered, logged-in users. Button mashers Admin have access to the Admin Dashboard which allow them full CRUD over Product Management and Review posting.
-
-| Feature | Create | Read | Update | Delete |
-|---------|--------|------|--------|--------|
-| Account | On registration | Yes, delivery details and order history | Yes, update address | No, users are unable to delete their accounts, this is restricted to Admin |
-| Bag | Yes, customers may add to their bag | Yes | Yes, items can be added/removed | Yes |
-| Products | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
-| Articles | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
+Customers have full CRUD functionality with their prospective purchases. They may edit their cart, add more items or remove all items. They may also add their delivery details if they are registered, logged-in users. Button mashers Admin have access to the Admin Dashboard which allow them full CRUD over Product Management and Review posting.
 
 ## Features Showcase
 
@@ -246,23 +236,11 @@ Customers have full CRUD functionality with their prospective purchases. They ma
 
 **All Auth - All Users who wish to create an account**
 
-Django AllAuth provides a comprehensive, customisable authentication system that keeps user data safe. If a customer wishes to register an account they may enter their username and email and password x 2 to ensure precision. Upon submitting the form the user will receive an email to validate their email and then sign in to Button mashers. Similar to all form fields throughout the site, I have applied my own styling to keep in line with Button mashers's design. The log in page is similar to the register page with the log out page presenting the user with two buttons to continue the log out process or to return home.
+Django AllAuth provides a comprehensive, customisable authentication system that keeps user data safe. If a customer wishes to register an account they may enter their username and email and password x 2 to ensure precision. Upon submitting the form the user will receive a message to inform them of succes and then sign in to Button mashers. 
+
+Consistent with the styling of all form fields across the site, I have customized the design to align with Button Mashers' overall aesthetic. The login page mirrors the registration page, while the logout page offers users two options: to proceed with the logout process or to return to the homepage.
 
 Feedback is continually released to the user through toast messages to confirm successful registration, log in and log out.
-
-AllAuth handles password reset by sending an email to the user with a link to change their password to something new.
-
-**Account - Registered, logged in User**
-
-**All Products - All Users**
-
-**Articles - All Users/Admin CRUD**
-
-**Cart - All Users**
-
-**Checkout - All Users**
-
-**Admin Dashboard - Logged in Admin/Superuser only**
 
 When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into an Admin Dashboard. This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Articles and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Add' buttons bring the Admin directly to adding products or articles. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models. Defensive design for deletion of items appears in the form of a 'Delete Confirmation' modal.
 
@@ -294,33 +272,27 @@ When developing this project it was important to me to have a separate Admin are
 - Python
 - [Git](https://git-scm.com/) used for version control.
 - [Github](https://www.github.com) used for online storage of codebase and Projects tool.
-- [Figma](https://www.figma.com) for project design planning and wireframe creation.
+- [Scene](https://www.scene.io) for project design planning and wireframe creation.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the 'Button mashers' application.
-- [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse) to evaluate the accessibility of the site.
 
 ## Libraries & Frameworks
 
-Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough from our course material with the Code Institute. This project will be upgraded on completion of the course to more recent packages to meet current standards and security packages.
+Libraries and frameworks used were dictated by the CI Django blog walkthrough from our course material with the Code Institute. This was supplemented by my own additions that were neccessary to complete the project.
 
 - [Django v3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/) 
 - [AllAuth v0.41](https://django-allauth.readthedocs.io/) for user authentication and account management.
 - [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) for template rendering.
 - [Crispy Forms](https://pypi.org/project/crispy-bootstrap4/) for form rendering.
-- [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) for AWS CRUD with Python scripts.
 - [dj-database-url](https://pypi.org/project/dj-database-url/) for DATABASE_URL.
-- [django-countries](https://pypi.org/project/django-countries/) for country field rendering in checkout form.
 - [django-storages](https://django-storages.readthedocs.io/en/latest/) for handling static and media files.
-- [django-summernote](https://pypi.org/project/django-summernote/) a WYSIWYG editor for Django forms and models.
 - [gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/) apure-Python WSGI server for UNIX.
 - [oauthlib](https://pypi.org/project/oauthlib/) OAuth request-signing logic.
 - [psycopg2](https://pypi.org/project/psycopg2/) s PostgreSQL database adapter for Python.
-- [Stripe](https://stripe.com/en-ie) for processing Button mashers's payment system.
 
 ## Tools & Programs
-- [ImageCompressor](https://imagecompressor.com/) for compressing PNG/WEbp files
-- [Convertio](https://convertio.co/) for file conversion to PNG, WEBP.
-- [Tiny Png](https://tinypng.com/) for file size reduction.
+- [Towebp](https://towebp.io/) for compressing PNG/WEbp files
 - [Lucidchart](https://www.lucidchart.com/pages) for ERD (entity relationship diagram) creation.
 - [Favicon](https://favicon.io/) for converting an icon into a favicon.
 - [amiresponsive](https://ui.dev/amiresponsive) for screenshot of Button mashers on different screen sizes.
@@ -350,15 +322,15 @@ To begin this project from scratch, you must first create a new GitHub repositor
 - ```pip3 install dj_database_url psycopg2``` 
   
 1. Once you have installed any relevant dependencies or libraries, such as the ones listed above, it is important to create a **requirements.txt** file and add all installed libraries to it with the ```pip3 freeze --local > requirements.txt``` command in the terminal.  
-2. Create a new Django project in the terminal ```django-admin startproject Button mashers .```
+2. Create a new Django project in the terminal ```django-admin startproject <project name>.```
 3. Create a new app eg. ```python3 mangage.py startapp home```
-5. Add this to list of **INSTALLED_APPS** in **settings.py** - 'home',
-6. Create a superuser for the project to allow Admin access and enter credentials: ```python3 manage.py createsuperuser```
-7. Migrate the changes with commands: ```python3 manage.py migrate```
-8. An **env.py** file must be created to store all protected data such as the **DATABASE_URL** and **SECRET_KEY**. These may be called upon in your project's **settings.py** file along with your Database configurations. The **env.py** file must be added to your **gitignore** file so that your important, protected information is not pushed to public viewing on GitHub. For adding to **env.py**:
+4. Add this to list of **INSTALLED_APPS** in **settings.py** - 'home',
+5. Create a superuser for the project to allow Admin access and enter credentials: ```python3 manage.py createsuperuser```
+6. Migrate the changes with commands: ```python3 manage.py migrate```
+7. An **env.py** file must be created to store all protected data such as the **DATABASE_URL** and **SECRET_KEY**. These may be called upon in your project's **settings.py** file along with your Database configurations. The **env.py** file must be added to your **gitignore** file so that your important, protected information is not pushed to public viewing on GitHub. For adding to **env.py**:
 
 - ```import os```
-- ```os.environ["DATABASE_URL"]="<copiedURLfromElephantSQL>"```
+- ```os.environ["DATABASE_URL"]="<copiedURLpostGres>"```
 - ```os.environ["SECRET_KEY"]="my_super^secret@key"```
   
 For adding to **settings.py**:
@@ -367,7 +339,7 @@ For adding to **settings.py**:
 - ```import dj_database_url```
 - ```if os.path.exists("env.py"):```
 - ```import env```
-- ```SECRET_KEY = os.environ.get('SECRET_KEY')``` (actual key hidden within env.py)  
+- ```SECRET_KEY = os.environ.get('SECRET_KEY')``` (actual extracted to variable within env.py)  
 
 9. Replace **DATABASES** with:
 
@@ -392,12 +364,10 @@ os.path.join(BASE_DIR, 'templates', 'allauth')
 11. A **Procfile** must be created within the project repo for Heroku deployment with the following placed within it: ```web: gunicorn ecommerce.wsgi```
 12. Make the necessary migrations again.
 
-### Elephant SQL
+### Postgres SQL
 
-A new database instance can be created on [Elephant SQL](https://www.elephantsql.com/) for your project. 
+A new database instance was created on [Postgres SQL](https://dbs.ci-dbs.net/) for the project. 
 
-- Choose a name and select the **Tiny Turtle** plan, which is free.
-- Select your Region and the nearest Data Center to you. 
 - From your user dashboard, retrieve the important 'postgres://....' value. Place the value within your **DATABASE_URL**  in your **env.py** file and follow the below instructions to place it in your Heroku Config Vars.
 
 ## Heroku Deployment
@@ -411,137 +381,33 @@ To start the deployment process , please follow the below steps:
 
    - **DATABASE_URL**:**postgres://...**
    - **DISABLE_COLLECTSTATIC** of value '1' (N.B Remove this Config Var before deployment),
-   - **SECRET_KEY** and value  
-   <!-- - **AWS_ACCESS_KEY** and value
-   - **AWS_SECRET_ACCESS_KEY** and value
-   - **EMAIL_HOST_PASS** and value
-   - **EMAIL_HOST_USER** and value
-   - **STRIPE_PUBLIC_KEY** and value
-   - **STRIPE_SECRET_KEY** and value
-   - **STRIPE_WH_SECRET** and value
-   - **USE_AWS** and value -->
+   - **SECRET_KEY** and value
+   - **CLOUDINARY_API_KEY** and value
+   - **CLOUDINARY_API_SECRET** and value
+   - **CLOUDINARY_CLOUD_NAME** and value
 
 5. Add the Heroku host name into **ALLOWED_HOSTS** in your projects **settings.py file** -> ```['herokuappname', ‘localhost’, ‘8000 port url’].```
-2. Once you are sure that you have set up the required files including your requirements.txt and Procfile, you have ensured that **DEBUG=False**, save your project, add the files, commit for initial deployment and push the data to GitHub.
-3. Go to the '**Deploy**' tab and choose GitHub as the Deployment method.
-4. Search for the repository name, select the branch that you would like to build from, and connect it via the '**Connect**' button.
-5. Choose from '**Automatic**' or '**Manual**' deployment options, I chose the 'Manual' deployment method. Click '**Deploy Branch**'.
-6.  Once the waiting period for the app to build has finished, click the '**View**' link to bring you to your newly deployed site. If you receive any errors, Heroku will display a reason in the app build log for you to investigate. **DISABLE_COLLECTSTATIC**  may be removed from the Config Vars once you have saved and pushed an image within your project.
-
-<!-- ## Google Mail Setup
-
-1. Setup a Gmail Account that will be used to hold and store the emails for your project.
-2. Logged in, navigate to **Settings** -> **Other Google Account Settings** -> **Accounts** -> **Import** -> **Other Account Settings**
-3. Activate 2-Step Verification
-4. Once verified access **App Passwords** -> **Other** -> enter a name for the password, eg Button mashers.
-5. Click **Create** -> copy the 16 digit password that is generated.
-6. In your `settings.py` add the following Email Settings:
-   ![django email settings](docs/readme_images/email_settings.png)  
-   *Django Email Settings for Button mashers Email setup*  
-7. Add EMAIL_HOST_PASS, EMAIL_HOST_USER variable, password and email address to your Heroku Config Vars -->
+6. Once you are sure that you have set up the required files including your requirements.txt and Procfile, you have ensured that **DEBUG=False**, save your project, add the files, commit for initial deployment and push the data to GitHub.
+7. Go to the '**Deploy**' tab and choose GitHub as the Deployment method.
+8. Search for the repository name, select the branch that you would like to build from, and connect it via the '**Connect**' button.
+9. Choose from '**Automatic**' or '**Manual**' deployment options, I chose the 'Manual' deployment method. Click '**Deploy Branch**'.
+10. Once the waiting period for the app to build has finished, click the '**View**' link to bring you to your newly deployed site. If you receive any errors, Heroku will display a reason in the app build log for you to investigate. **DISABLE_COLLECTSTATIC**  may be removed from the Config Vars once you have saved and pushed an image within your project.
     
-## AWS Config
+## Cloudinary Config
 
-[AWS](https://aws.amazon.com) is used to store the media and static files online for Button mashers. Please follow the below steps to set it up for yourself:
+[Cloudinary](https://console.cloudinary.com) is used to store the media and static files online for Button mashers. Please follow the below steps to set it up for yourself:
 
-1. Setup AWS Account and Login
-2. Create a new S3 Bucket -> name it to match your Heroku App name -> Choose the region closest to you.
-3. Allow **Clock All Public Access**, tick 'Bucket will be public' in order for the bucket to connect to Heroku. 
-4. In **Object Ownership** -> **ACLS Enabled** -> **Bucket Owner Preferred**.
-5. **Properties** tab -> turn on static web hosting and add 'index.html' and 'error.html' into the correct fields -> click **Save**
-6. In the **Permissions** tab, paste in the following CORS config:
-
-   ```
-	[
-		{
-			"AllowedHeaders": [
-				"Authorization"
-			],
-			"AllowedMethods": [
-				"GET"
-			],
-			"AllowedOrigins": [
-				"*"
-			],
-			"ExposeHeaders": []
-		}
-	]
-	```
-7. Copy your **ARN** string.
-8. From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
-	- Policy Type: **S3 Bucket Policy**
-	- Effect: **Allow**
-	- Principal: `*`
-	- Actions: **GetObject**
-	- Amazon Resource Name (ARN): **paste-your-ARN-here**
-	- Click **Add Statement**
-	- Click **Generate Policy**
-	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
-
-		```shell
-		{
-			"Id": "Policy1234567890",
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Sid": "Stmt1234567890",
-					"Action": [
-						"s3:GetObject"
-					],
-					"Effect": "Allow",
-					"Resource": "arn:aws:s3:::bucket-name/*"
-					"Principal": "*",
-				}
-			]
-		}
-		```
-    - Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
-	- Click **Save**.
-9. In the **ACL - Access Control List** -> **Edit** -> enable **List** for **Everyone(Public Access)** -> Accept the warning.
-
-### AWS - IAM setup
-
-1. AWS Services Menu -> **Create New Group** -> add name eg. 'group-project-name'.
-2. Navigate from there to **REview Policy** page -> **User Groups** -> Select newly named group.
-3. Navigate to **Permissions** tab -> **Add Permissions** -> Click **Attach Policies**
-4. Select policy -> **Add Permissions** at the bottom, click when finished.
-5. From **JSON** tab -> select **Import Managed Policy** link -> search for **S3** -> select **Amazon3FullAccess** policy -> **Import**.
-6. Copy **ARN** from S3 Bucket again ->
-
-   ```
-		{
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Effect": "Allow",
-					"Action": "s3:*",
-					"Resource": [
-						"arn:aws:s3:::bucket-name",
-						"arn:aws:s3:::bucket-name/*"
-					]
-				}
-			]
-		}
-	```
-7. Click **Review Policy** -> name eg. 'policy-Button mashers' -> enter a description -> **Create Policy**
-8. Search for your new policy and click it to **Attach Policy**
-9. **User Groups** -> **Add User** -> name eg. 'user-Button mashers'
-10. For **Select AWS Access Type** -> select **Programmatic Access** -> Add group to 'user-Button mashers' -> **Review User** -> **Create User**.
-11. Find **Download.csv** button to download immediately and save a copy.
-    - This contains the user's **Access key ID** and **Secret access key**.
-	- `AWS_ACCESS_KEY_ID` = **Access key ID**
-	- `AWS_SECRET_ACCESS_KEY` = **Secret access key** 
-
-### Media Folder Setup
-1. In Heroku Config Vars, remove `DISABLE_COLLECTSTATIC`.
-<!-- 2. In AWS S3 create a new folder -> **media** -> Add project images -> **Manage Public Permissions** -> **Grant public read access to the objects** -> **Upload** -->
+1. Setup Cloudinary Account and Login
+2. In the Cloudinary dashboard, copy the CLOUDINARY_URL.
+3. Open the env.py file and set the value of the CLOUDINARY_URL constant to the URL you copied from the Cloudinary dashboard
+4. Open the codestar/settings.py file and add the apps to INSTALLED_APPS.->
 
 ## Clone Project
 
 A local clone of this repository can be made on GitHub. Please follow the below steps:
 
 1. Navigate to GitHub and log in.
-2. The [Button mashers repository]() can be found at this location.
+2. The [Button mashers repository](https://github.com/Cloud-Monkey/micro-e-commerce-django-paypal) can be found at this location.
 3. Above the repository file section, locate the '**Code**' button.
 4. Click on this button and choose your clone method from HTTPS, SSH or GitHub CLI, copy the URL to your clipboard by clicking the '**Copy**' button.
 5. Open your Git Bash Terminal.
@@ -557,7 +423,7 @@ A local clone of this repository can be made on GitHub. Please follow the below 
 A copy of the original repository can be made through GitHub. Please follow the below steps to fork this repository:  
 
 1. Navigate to GitHub and log in.  
-2. Once logged in, navigate to this repository using this link [Button mashers Repository](https://github.com/amylour/Button mashers).
+2. Once logged in, navigate to this repository using this link [Button mashers Repository](https://github.com/Cloud-Monkey/micro-e-commerce-django-paypal).
 3. Above the repository file section and to the top, right of the page is the '**Fork**' button, click on this to make a fork of this repository.
 4. You should now have access to a forked copy of this repository in your Github account.
 5. Follow the above Django Project Steps if you wish to work on the project.
@@ -566,7 +432,8 @@ A copy of the original repository can be made through GitHub. Please follow the 
 
 ## Code
 
-The following blogs/tutorials complimented my learning for this project
+The following blogs/tutorials complimented my learning for this project:
+
 
 ## Media
 
