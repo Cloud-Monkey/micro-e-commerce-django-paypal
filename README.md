@@ -258,19 +258,10 @@ When developing this project it was important to me to have a separate Admin are
 
 ## Future Features
 
-- **Stock Levels**
-
-- **Article Comment, Article React**
-
-- **Reviews feature with Ratings**
-  
-- **Eco-Labels**
-  
-- **Newsletter Discount Code**
-
-- **Sale Section**
-
-- **Product Slugs**
+- **Paypal Integration**
+- **Home Page**
+- **Gallery of Projects Page**
+- **Footer with Forum links**
 
 # Technologies & Languages Used
 
