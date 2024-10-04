@@ -22,49 +22,49 @@ function updateUserOrder(productId, action) {
 
 	const url = '/update_item/'
 	// create token workaround from django documentation
-		fetch(url, {
+	fetch(url, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
 			'X-CSRFToken': csrftoken,
-			}, 
+		},
 		body: JSON.stringify({ 'productId': productId, 'action': action })
-		})
+	})
 		.then((response) => {
-		   return response.json();
+			return response.json();
 		})
 		.then((data) => {
-		    location.reload()
+			location.reload()
 		});
 }
 
 // create cookie for cart when user is logged or not
-function addCookieItem(productId, action){
-    console.log('User is not authenticated');
+function addCookieItem(productId, action) {
+	console.log('User is not authenticated');
 
-    if (action == 'add'){
-        if (cart[productId] == undefined){
-            cart[productId] = {'quantity':1}
-        } else {
-            cart[productId]['quantity'] += 1
-        }
-    }
+	if (action == 'add') {
+		if (cart[productId] == undefined) {
+			cart[productId] = { 'quantity': 1 }
+		} else {
+			cart[productId]['quantity'] += 1
+		}
+	}
 
-    if (action == 'remove'){
-        cart[productId]['quantity'] -= 1
+	if (action == 'remove') {
+		cart[productId]['quantity'] -= 1
 
-        if (cart[productId]['quantity'] <= 0){
-            console.log('Item should be deleted')
-            delete cart[productId];
-        }
-    }
+		if (cart[productId]['quantity'] <= 0) {
+			console.log('Item should be deleted')
+			delete cart[productId];
+		}
+	}
 
-    // Set the cookie with SameSite=Lax attribute
-    document.cookie = 'cart=' + JSON.stringify(cart) + 
-                      ';path=/;' +
-                      'max-age=604800;' + // 1 week
-                      'SameSite=Lax;' +
-                      (window.location.protocol === 'https:' ? 'Secure;' : '');
-    
-    location.reload()
+	// Set the cookie with SameSite=Lax attribute
+	document.cookie = 'cart=' + JSON.stringify(cart) +
+		';path=/;' +
+		'max-age=604800;' + // 1 week
+		'SameSite=Lax;' +
+		(window.location.protocol === 'https:' ? 'Secure;' : '');
+
+	location.reload()
 }

@@ -334,7 +334,17 @@ All pages HTML validated using https://validator.w3.org/ with no errors after fi
 
 All CSS validated using https://jigsaw.w3.org/css-validator with no errors after fix was applied, there was an incorrect align items value which was corrected to 'stretch'.
 
+## JS Validator
 
+![JS Validated](/readme-images/js-valid-img.png)
+
+All JavaScript code validated using https://jshint.com with warnings but no significant errors, due to my current learning scope this is something which I have documented and assigned to a further itteration on the project.
+
+## Python Validator
+
+![Python Validated](/readme-images)
+
+All Python code validated using https://pep8ci.herokuapp.com/
 
 
 # Deployment
@@ -498,8 +508,8 @@ Image credits are as follows:
 
 ## Acknowledgements
 
-- A huge thanks to my wife Katie for her continued support during this project and bootcamp, through all tears for the many cups of coffee, the continued love and support. You are a blessing in my life 
+- A huge thanks to my wife Katie for her continued support during this project and bootcamp, through all tears, for the many cups of coffee and the continued love and support. You are a blessing in my life 
 
-- Much gratitude is extended to my subject matter expert Mark Briscoe, coding coaches John Rearden and Roo MacArthur also my personal facilitator Amy Richardson for their expert guidance and advice during this bootcamp, which gave me the confidence to make the most out of every project.
+- I would like to express my sincere gratitude to my subject matter expert, Mark Briscoe, as well as to coding coaches John Rearden and Roo MacArthur, and my personal facilitator, Amy Richardson. Their expert guidance and advice throughout this bootcamp have been invaluable, instilling in me the confidence to fully engage with each project.
 
 - Thank you to my fellow students and Code Institute alumni for their guidance, support and good humour.
