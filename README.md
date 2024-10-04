@@ -322,6 +322,18 @@ Libraries and frameworks used were dictated by the CI Django blog walkthrough fr
 
 # Testing
 
+## HTML Validator
+
+![HTML Validated](/readme-images/html-img.png)
+
+All pages HTML validated using https://validator.w3.org/ with no errors after fixes were applied, no type attribute required in script tags removed, also required the removal of h3 tags from table header elements to fix flagged warnings and errors.
+
+## CSS Validator
+
+![CSS Validated](/readme-images/css-valid-img.png)
+
+All CSS validated using https://jigsaw.w3.org/css-validator with no errors after fix was applied, there was an incorrect align items value which was corrected to 'stretch'.
+
 
 
 
