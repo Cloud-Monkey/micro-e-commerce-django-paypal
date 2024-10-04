@@ -9,12 +9,12 @@
 <head>
 	<title>Button Mashers</title>
 	<!-- meta info tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
 
 	<meta name="description"
-        content="Elevate your gaming experience with premium custom arcade controller parts. Shop our extensive selection of buttons, joysticks, balltops, and more. Build your perfect arcade setup with high-quality components for authentic gameplay. Fast shipping, expert advice, and unbeatable prices on all your DIY arcade needs.">
+		content="Elevate your gaming experience with premium custom arcade controller parts. Shop our extensive selection of buttons, joysticks, balltops, and more. Build your perfect arcade setup with high-quality components for authentic gameplay. Fast shipping, expert advice, and unbeatable prices on all your DIY arcade needs.">
 
-    <meta name="keywords" content="Arcade kits, Fight stick parts and accessories, USB arcade controller kits">
+	<meta name="keywords" content="Arcade kits, Fight stick parts and accessories, USB arcade controller kits">
 
 	<!-- bootstrap cdn link -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -27,7 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
 	<!-- set/query user logged in or not -->
-	<script type="text/javascript">
+	<script>
 		const user = '{{request.user}}'
 
 		function getToken(name) {
@@ -55,7 +55,7 @@
 
 	<!-- bootstrap navbar code -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="{% url 'store' %}"><img class="logo-img" alt="pixel text of button mashers logo"
+		<a class="navbar-brand" href="{% url 'store' %}"><img class="logo-img"
 				src="{% static 'images/logo-button-mashers.png' %}" alt="button mashers logo"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,7 +126,7 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
+	<script src="{% static 'js/cart.js' %}"></script>
 
 	{% block extras %}
 	{% endblock %}
