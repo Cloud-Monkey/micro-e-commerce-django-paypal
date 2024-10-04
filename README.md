@@ -359,6 +359,10 @@ Issues were experienced with the lighthouse performance test and it was unable t
 
 Manual observations of site performance are acceptable, no slow rendering or especially slow updates to the database when utilising CRUD features via the front-end.
 
+## Known Bugs
+
+The ratings feature within the review form will allow a user to go beyond the max value of five, while this does not affect the amount of stars rendered when posted, it should be a limited range option within the form. A ticket has been raised for this to be fixed and the bug documented.
+
 # Deployment
 
 ## Connecting to GitHub  
