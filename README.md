@@ -230,17 +230,39 @@ Customers have full CRUD functionality with their prospective purchases. They ma
 
 **Header & Navigation - All Users**
 
+![Nav Bar](/readme-images/navbar-img.png)
+
+Nav bar on every page, displays links to store and cart pages, dynamic login status messages and login/logout button.
+
 **Store Page - All Users**
 
-**Add to cart - Registered Users**
+![Store page](/readme-images/store-page-img.png)
 
-**View - All Users**
+Displays products with option to add to cart for logged in users or view option to expand to detailed view of products.
+
+**Add to cart - Registered Users** **View - All Users**
+
+![Add to cart button](/readme-images/add-to-cart-img.png)
+
+Adds selected product to cart for registered users.
 
 **Cart - Registered Users**
 
+![Cart page](/readme-images/cart-img.png)
+
+Shows summary of items added to cart, has add remove items from cart arrow toggles to increase or decrease items in cart
+
 **Checkout - Registered Users**
 
+![Checkout page](/readme-images/checkout-img.png)
+
+Shipping address form and items summary, ability to complete purchases and checkout.
+
 **Add/Edit/Delete Reviews - Registered Users**
+
+![Review](/readme-images/review-img.png) ![Add review](/readme-images/add-review-img.png)
+
+Logged in users can Add a review, If the review has been added already it can be edited or deleted by the user.
 
 **All Auth - All Users who wish to create an account**
 
@@ -251,10 +273,6 @@ Consistent with the styling of all form fields across the site, I have customize
 Feedback is continually released to the user through toast messages to confirm successful registration, log in and log out.
 
 When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into an Admin Dashboard. This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Articles and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Add' buttons bring the Admin directly to adding products or articles. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models. Defensive design for deletion of items appears in the form of a 'Delete Confirmation' modal.
-
-**Footer - All Users**
-
-**Contact Us - All Users**
 
 ## Future Features
 
@@ -299,6 +317,7 @@ Libraries and frameworks used were dictated by the CI Django blog walkthrough fr
 - [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and Django documentation into more understandable chunks.
 
 # Testing
+
 
 
 
@@ -436,6 +455,8 @@ The following blogs/tutorials complimented my learning for this project:
 
 - Code institue "For the love of Blog" walkthrough (https://learn.codeinstitute.net/courses)
 - Django Ecommerce Website Walkthrough (https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng)
+- Everneed Ecommerce website by Amy Richardson (https://github.com/amylour/everneed)
+- Boutique Ado Code Institute (https://github.com/johnrearden/boutique_ado)
 - W3 Schools (https://www.w3schools.com/)
 - Perplexity AI (https://www.perplexity.ai/)
 - Bootstrap Documentation (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
@@ -451,7 +472,8 @@ Image credits are as follows:
 ### Additional reading/tutorials/books/blogs
 
 - medium (https://medium.com/)
-- Geeks for Geeks ()
+- Geeks for Geeks (https://www.geeksforgeeks.org/)
+- Stackoverflow (https://try.stackoverflow.co/)
 - python documentation (https://www.python.org/)
 - W3 Schools (https://www.w3schools.com/)
 - Perplexity AI (https://www.perplexity.ai/)
