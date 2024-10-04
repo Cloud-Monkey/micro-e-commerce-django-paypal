@@ -357,7 +357,7 @@ Contrast issues were changed to achieve best accessability scores, meta data was
 
 Issues were experienced with the lighthouse performance test and it was unable to be used, browser updates, incognito mode and multiple attempts failed to resolve the issue of utilising the performance test feature of lighthouse. Again this is to be resolved in a further iteration of the project.
 
-Manual observations of site performance are acceptable, no slow rendering or especially slow updates to the database when utilising CRUD features via the front-end.
+Manual observations of site performance are acceptable, responsive to screen size and no slow rendering or especially slow updates to the database when utilising CRUD features via the front-end.
 
 ## Known Bugs
 
