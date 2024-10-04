@@ -7,7 +7,7 @@
 		<div class="box-element product">
 			<img class="thumbnail" alt="product image" src="{{product.featured_image.url}}">
 			<hr>
-			<h1 class="product-title"><strong>{{product.name}}</strong></h1>
+			<h2 class="product-title"><strong>{{product.name}}</strong></h2>
 			<hr>
 
 			{% if user.is_authenticated %}
@@ -17,8 +17,8 @@
 			<a href="{% url 'account_login' %}" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</a>
 			{% endif %}
 			<a class="btn btn-outline-success view-btn" href="/product/{{ product.id }}">View</a>
-			<h2 class="product-prices" style="display: inline-block; float: right"><strong>£{{product.price}}</strong>
-			</h2>
+			<h3 class="product-prices" style="display: inline-block; float: right"><strong>£{{product.price}}</strong>
+			</h3>
 
 		</div>
 	</div>
