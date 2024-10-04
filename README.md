@@ -46,7 +46,7 @@ For full Admin access to Django Admin panel with relevant sign-in credentials: [
 - [Deployment](#deployment)
   - [Connecting to GitHub](#connecting-to-github)
   - [Django Project SetUp](#django-project-setup)
-    - [Elephant SQL](#elephant-sql)
+    - [Postgres SQL](#postgres-sql)
   - [Heroku Deployment](#heroku-deployment)
     - [Media Folder Setup](#media-folder-setup)
   - [Clone Project](#clone-project)
@@ -198,16 +198,19 @@ In the skeleton and surface planes of my project, I focused on creating an intui
 
 ### Database Schema
 
-<!-- ![Button mashers Eco Eco-Ecommerce ERD]()  
+![ERD Diamgram](/readme-images/erd-diagram-img.png)
+
 *Database Schema (ERD) for Button mashers displaying relationships between feature components saved within the database*
 
 [Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for Button mashers. To satisfy the assessment criteria, multiple models were created to personalise the Button mashers project. These include:
-- **Articles**: Articles may be added by Admin with image and text fields within the Add/Edit Article forms.
-- **Order**: Carbon Footprint total and Carbon Saved Total have been added to the Boutique Ado Order model to handle the carbon total logic. This logic duplicates the product adding/updating/quantity logic within the bag contexts to allow for the carbon footprint to be calculated for products that had some form of data available to me to calculate approximate values.
-- **Product**: Carbon Footprint and Carbon Saved have been added to the Boutique Ado Product model to handle the carbon total logic. The Admin can enter these values into the Product Management forms to be made available for the bag/checkout logic to process them.
-- **Wishlist**: The Wishlist model takes simple values of the connected user and the product id to display the items in a list for the individual user.
 
-Future Feature models are visible in the ERD for Reactions, Reviews and Discount Codes. These will be incorporated into the next version of Button mashers. At the moment they are beyond the MVP. -->
+- **User** User is created on signup, linked to customer and review.
+- **Customer** Customer is created on signup and linked to user.
+- **Order** Order is connected to customer and order items.
+- **Order item** Connected to order and product.
+- **Review** Review is connected to order and product.
+- **Shipping Address** Shipping address is linked to customer and order.
+- **Product** Products may be added by Admin with image and text fields within the Add/Edit products forms.
 
 ### Defensive Design
 
@@ -262,7 +265,7 @@ Shipping address form and items summary, ability to complete purchases and check
 
 ![Review](/readme-images/review-img.png) ![Add review](/readme-images/add-review-img.png)
 
-Logged in users can Add a review, If the review has been added already it can be edited or deleted by the user.
+Logged in users can Add a review and ratings for the product, If the review has been added already it can be edited or deleted by the user.
 
 **All Auth - All Users who wish to create an account**
 
