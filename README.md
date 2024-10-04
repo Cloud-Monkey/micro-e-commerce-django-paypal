@@ -344,8 +344,20 @@ All JavaScript code validated using https://jshint.com with warnings but no sign
 
 ![Python Validated](/readme-images)
 
-All Python code validated using https://pep8ci.herokuapp.com/
+All Python code validated using https://pep8ci.herokuapp.com/ again here there were warnings but no significant errors. Most files passed checks, models.py, settings.py, urls.py all had warnings relating to formating (Whitespace, indentation, no new line at end of file, too many characters etc) these warnings have been documented and due to my current learning scope and project deadline have been added to a further iteration for bug fixes. Most of these warnings can be solved with the configeration of a proper python formatting extension.
 
+## Lighthouse
+
+![Lighthouse scores](/readme-images/lightouse-scores-img.png)
+
+Further considerations for testing accessability, performance, SEO and best practices werereviewed and addressed using lighthouse.
+Contrast issues were changed to achieve best accessability scores, meta data was added to optimize SEO scores and best practices were addressed by changing protocols to HTTPS for images from Cloudinary. Scores achieved in these fields are satisfactory.
+
+![Lighthouse performance test error](/readme-images/lighthouse-error-img.png)
+
+Issues were experienced with the lighthouse performace test and it was unable to be used, browser updates, incognito mode and multiple attempts failed to resolve the issue of utilising the performance test feature of lighthouse. Again this is to be resolved in a further iteration of the project.
+
+Manual observations of site performance are acceptable, no slow rendering or especially slow updates to the database when utilising CRUD features via the front-end.
 
 # Deployment
 
