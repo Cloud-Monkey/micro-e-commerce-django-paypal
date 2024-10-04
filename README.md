@@ -283,6 +283,7 @@ When developing this project it was important to me to have a separate Admin are
 - **Home Page**
 - **Gallery of Projects Page**
 - **Footer with Forum links**
+- **Click product image to expand to product detail page**
 
 # Technologies & Languages Used
 
