@@ -1,7 +1,8 @@
 ![Button mashers logo](readme-images/logo-readme.png)
 
+![Button mashers responsive screenshot](readme-images/store-responsive-page-img.png)
 
-![Button mashers responsive screenshot](readme-images/Button-mashers-responsive-img.png)
+![Button mashers responsive screenshot](readme-images/productdetail-responsive-img.png)
 
 ## Introduction
 
